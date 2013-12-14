@@ -1,0 +1,130 @@
+
+<!-- ONE STEP TO INSTALL PICTURE MEMORY:
+
+  1.  Copy the coding into the HEAD of your HTML document  -->
+
+<!-- STEP ONE: Paste this code into the HEAD of your HTML document  -->
+
+<html>
+
+<HEAD>
+
+<!-- THREE STEPS TO INSTALL PICTURE MEMORY:
+
+  1.  Save the entire first HTML page as picture-memory.html
+  2.  Paste the second code into your page to open the game
+  3.  Download the game images and upload them to your server  -->
+
+<!-- STEP ONE: Save the entire first HTML page as picture-memory.html  -->
+
+<script language="JavaScript">
+<!-- Original:  Kien Caoxuan (kcaoxuan@caoxuan.com) -->
+<!-- Web Site:  http://www.caoxuan.com -->
+
+<!-- This script and many more are available free online at -->
+<!-- The JavaScript Source!! http://javascript.internet.com -->
+
+<!-- Begin
+N = (navigator.appName.indexOf("Netscape")!=-1);
+M = (navigator.appName.indexOf("Microsoft")!=-1);
+
+Vis = new Array();
+Vis[0] = (M) ? "hidden" : "hide";
+Vis[1] = (M) ? "visible" : "show";
+
+function GetDiv(divId,divY,divX,divW,divH,bCol,visb,zInd) {
+bkCol=(bCol!="")?((N)?" bgColor="+bCol:";background:"+bCol):"";
+
+DivTyp = (M) ? "<DIV" : "<LAYER"
+if (M) { Styl=" ID="+divId+" style='position:absolute;top:"+divY+";left:"+divX+";width:"+divW+";height:"+divH+bkCol+";visibility:"+Vis[visb]+";z-index:"+zInd+"'>"; }
+if (N) { Styl=" ID="+divId+" top="+divY+" left="+divX+" width="+divW+" height="+divH+bkCol+" visibility="+Vis[visb]+" z-index="+zInd+">"; }
+document.writeln(DivTyp+Styl);
+}
+function EndDiv() {
+(M) ? document.writeln("</DIV>") : document.writeln("</LAYER>");
+}
+// End -->
+</script>
+</head>
+<body>
+<p align="right">
+
+<i><font face="Arial"><a href="../Index.htm">
+<font color="#008000">Back to games</font></a></font></i></p>
+
+
+<script language="JavaScript">
+<!-- Begin
+corr = new Array();
+gnum = 0;
+score = 0;
+ind = 0;
+for (rows = 0; rows < 3; rows++) {
+for (cols = 0; cols < 5; cols++) {
+ind++;
+corr[ind] = 0;
+eval("GetDiv('d"+ind+"',"+rows*100+","+cols*100+",100,100,'',1,0)");
+document.write("<img src=Pic",ind,".jpg width=100 height=100 border=0>");
+EndDiv();
+eval("GetDiv('dvTop"+ind+"',"+rows*100+","+cols*100+",100,100,'',0,1)");
+document.write("<a href='javascript:TestMe(",ind,")'><img name = Pix",ind," src=unknown.gif width=100 height=100 border=1></a>");
+EndDiv();
+   }
+}
+GetDiv('Control1',300,0,400,100,'silver',1,0);
+document.write("<center><br>Study the picture above carefully then <a href='javascript:StartTest()'>start the test</a>.</center>");
+EndDiv();
+GetDiv('Control2',300,0,400,100,'silver',0,1);
+document.write("<center><br>Where did you see this image? --> <br><br><font size=-2>You can see your score by taking your cursor off<br>the images above and looking in the browse status bar</font></center>");
+EndDiv();
+GetDiv('TestPix',300,400,100,100,'',1,1);
+document.write("<img src=unknown.gif name=Tester width=100 height=100");
+EndDiv();
+function StartTest() {
+if (M) { eval("document.all.Control2.style.visibility = 'visible'"); }
+if (N) { eval("document.layers.Control2.visibility = 'show'"); }
+for (x = 1; x < 16; x++) {
+if (corr[x] == 0) {
+if (M) { eval("document.all.dvTop"+x+".style.visibility = 'visible'"); }
+if (N) { eval("document.layers.dvTop"+x+".visibility = 'show'"); }
+   }
+}
+PickRandom();
+document.Tester.src = "Pic"+picked+".jpg";
+}
+function PickRandom() {
+chk = 0
+while (chk == 0) {
+picked = 1+Math.floor(15*Math.random())
+if (corr[picked] == 0) { chk = 1; break; }
+   }
+}
+function TestMe(x) {
+gnum++;
+if (x == picked) { score++; corr[x] = 1; }
+if (M) { eval("document.all.dvTop"+x+".style.visibility = 'hidden'"); }
+if (N) { eval("document.layers.dvTop"+x+".visibility = 'hide'"); }
+if (gnum > 14) {
+alert("It's over! Score = "+score);
+for (x = 1; x < 16; x++) { corr[x] = 0; }
+if (score == 15) alert("And you win!");
+gnum = 0;
+score = 0;
+window.close();
+}
+setTimeout('StartTest()', 1000);
+}
+// End -->
+</script>
+
+<center>
+<form name="open-picture-memory">
+</form>
+</left>
+
+</body>
+</html>
+
+
+<!-- STEP TWO: Paste the second code into your page to open the game  -->
+
