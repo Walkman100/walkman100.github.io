@@ -1,0 +1,12 @@
+<HTML>
+<HEAD>
+<TITLE>Close Tab Auto-redirect</TITLE>
+<SCRIPT LANGUAGE="JavaScript"></SCRIPT>
+<META HTTP-EQUIV="refresh" CONTENT="0;url=javascript:window.open('','_self').close();">
+</HEAD>
+<BODY>
+<FORM>
+<INPUT Type="button" VALUE="Close tab" onClick="javascript:window.open('','_self').close();">
+</FORM>
+</body>
+</html>
