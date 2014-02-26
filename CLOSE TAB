@@ -3,6 +3,7 @@
 <HEAD>
 <TITLE>Close Tab Auto-redirect</TITLE>
 <SCRIPT LANGUAGE="JavaScript"></SCRIPT>
+<link rel="stylesheet" href="main.css" type="text/css">
 <META HTTP-EQUIV="refresh" CONTENT="0;url=javascript:window.open('','_self').close();">
 </HEAD>
 <BODY>
