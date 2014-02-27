@@ -1,4 +1,4 @@
-body {background:snow; bgcolour:snow; font-family:"Verdana"; font-size:"2"; text-decoration:"none"}
-.redir {background:black; font-size:"4" color:"Lavender"}
+body {background:snow; font-family:Verdana, Geneva, sans-serif; font-size:16px; text-decoration:none}
+.redir {background:black; font-family:Verdana, Geneva, sans-serif; font-size:20px text-decoration:none color:Lavender}
 h1 {text-indent:2%}
 hr {size:2}
