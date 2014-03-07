@@ -1,6 +1,7 @@
 <html>
 <head>
 <title>YouTube Video Auto-Link</title>
+<!-- <META HTTP-EQUIV="refresh" CONTENT="10"> -->
 <link rel="shortcut icon" href="images/favicon.ico">
 <link rel="stylesheet" href="main.css" type="text/css">
 <script type="text/javascript" src="/Walkman/jwplayer.js"></script>
@@ -12,19 +13,66 @@
  Here are the <a href="http://www.enable-javascript.com/" target="_blank">
  instructions how to enable JavaScript in your web browser</a>.
 </noscript>
-<INPUT Type="button" VALUE="Back" onClick="history.go(-1);return true;">
+<INPUT Type="button" VALUE="Back" onClick="history.go(-1);return true;"><INPUT Type="button" VALUE="Close" onClick="javascript:window.open('','_self').close();">
 <form action="http://www.youtube.com/watch" target="_blank">
-Video ID:<input type="text" name="v" size="10" value="u0fk6syQ7iY">
-<br>Time:<input type="text" name="t" size="3" maxlength="6" value="0m28s">
+Video ID:<input type="text" name="v" size="10" value="tKNhPpUR0Pg">
+<br>Time:<input type="text" name="t" size="3" maxlength="6"> <font size='2'>(e.g. 1m28s)</font>
 <br><input type="checkbox" name="nofeather" value="True" checked="checked"> Use noFeather <font size='1'>(Sign up for YTF <a href="http://www.youtube.com/testtube" target="_blank">here</a>)</font>
+<br><input type="checkbox" name="hl" value="en"> <font size='2'>Use hl=en (Language Flag)</font>
+<br>List: <input type="text" name="list" size="27"> <font size='2'>(e.g. LLGqoiAgPKop0NEymu9WZxkQ )</font>
+<br>
+<input type="submit" formaction="http://www.youtube.com/watch" value="Go">
+<input type="submit" formaction="http://www.youtube.com/all_comments" value="Comments">
+<input type="submit" formaction="http://www.youtube.com/embed/tKNhPpUR0Pg" value="Embed Page Handler"><!-- that << is supposed to go to e.g. embed/[videoid]?[flags] -->
+<input type="reset" value="Reset">
+<hr width=100%>&nbsp;<b>Flags that don't seem to do anything</b>&nbsp;&nbsp;&nbsp;<font size='2'>(Note: they run on the same form as above i.e. same buttons)</font>
 <br><input type="radio" name="hd" value="0"> Use 360p
-<br><input type="radio" name="hd" value="1"> Use 720p (if available) &nbsp;<input type="submit" value="Go">
+<br><input type="radio" name="hd" value="1"> Use 720p (if available)
+<br><input type="checkbox" name="feature" value="player_embedded"> Use feature=player_embedded
+<br>Use autoplay= <input type="radio" name="autoplay" value="0">0 <input type="radio" name="autoplay" value="1">1
+<br>Use fs= <input type="radio" name="fs" value="0">0 <input type="radio" name="fs" value="1">1
+<br>Use autohide= <input type="radio" name="autohide" value="0">0 <input type="radio" name="autohide" value="1">1
+<br>Use enablejsapi= <input type="radio" name="enablejsapi" value="0">0 <input type="radio" name="enablejsapi" value="1">1
+<br>Use iv_load_policy= <input type="radio" name="iv_load_policy" value="0">0 <input type="radio" name="iv_load_policy" value="1">1 <input type="radio" name="iv_load_policy" value="3">3
+<br>Use modestbranding= <input type="radio" name="modestbranding" value="0">0 <input type="radio" name="modestbranding" value="1">1
+<br>Use rel= <input type="radio" name="rel" value="0">0 <input type="radio" name="rel" value="1">1
+<br>Use showinfo= <input type="radio" name="showinfo" value="0">0 <input type="radio" name="showinfo" value="1">1
+<br>Use showsearch= <input type="radio" name="showsearch" value="0">0 <input type="radio" name="showsearch" value="1">1
+<br><input type="checkbox" name="theme" value="dark"> Use theme=dark
+<br><input type="checkbox" name="start" value="10"> Use start=10
+<br><input type="checkbox" name="end" value="200"> Use end=200
+<br>Use wmode=transparent <input type="checkbox" name="wmode" value="transparent">
+<br><input type="checkbox" name="origin" value="http%3A%2F%2F9gag.tv"> Use origin=http%3A%2F%2F9gag.tv
 </form>
-<br><h3>Comments Only:</h3>
-<form action="http://www.youtube.com/all_comments" target="_blank">
-Video ID:<input type="text" name="v" size="9" value="u0fk6syQ7iY">
-<input type="submit" value="Go">
-</form>
-</font>
 </body>
 </html>
+<!-- Examples (taken from other embedded stuff e.t.c.)
+https://www.youtube.com/embed/R-XMtdBENRo?autoplay=0&fs=1&autohide=1&wmode=transparent&iv_load_policy=3&modestbranding=1&rel=0&showinfo=0&origin=http%3A%2F%2F9gag.tv&start=10&end=200&enablejsapi=1
+http://www.youtube.com/embed/p_RTL0hFgCc?wmode=transparent&fs=1&hl=en&autoplay=1&modestbranding=1&iv_load_policy=3&showsearch=0&rel=1&theme=dark
+https://www.youtube.com/watch?feature=player_embedded&v=R-XMtdBENRo#t=0
+https://www.youtube.com/watch?v=9-PAYHLJCZY&list=LLGqoiAgPKop0NEymu9WZxkQ
+
+<iframe width="1280" height="720" src="//www.youtube.com/embed/tKNhPpUR0Pg?rel=0" frameborder="0" allowfullscreen></iframe>
+
+<form>Video ID:<input type="text" name="v" size="10" value="u0fk6syQ7iY">
+      <input type="submit" formaction="http://www.youtube.com/watch" value="Go" />
+      <input type="submit" formaction="http://www.youtube.com/all_comments" value="Comments" />
+    </form>
+feature=player_embedded
+list=LLGqoiAgPKop0NEymu9WZxkQ
+autoplay=0
+fs=1
+autohide=1
+wmode=transparent
+iv_load_policy=3
+modestbranding=1
+rel=0   rel=1
+showinfo=0
+origin=http%3A%2F%2F9gag.tv
+start=10
+end=200
+enablejsapi=1 
+hl=en
+showsearch=0
+theme=dark 
+-->

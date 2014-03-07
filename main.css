@@ -1,3 +1,14 @@
-body {background:snow; font-family:Verdana, Geneva, sans-serif; font-size:14px; text-decoration:none}
-h1 {text-indent:2%}
-hr {size:2}
+body {
+background : snow;
+font-family : Verdana, Geneva, sans-serif;
+font-size : 14px;
+text-decoration : none;
+}
+
+h1 {
+text-indent : 2%;
+}
+
+hr {
+size : 2
+}
