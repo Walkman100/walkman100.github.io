@@ -1,0 +1,29 @@
+<html>
+<head>
+<title>Form Testing</title>
+<!-- <META HTTP-EQUIV="refresh" CONTENT="10"> -->
+<link rel="shortcut icon" href="images/favicon.ico">
+<link rel="stylesheet" href="main.css" type="text/css">
+<script type="text/javascript" src="jwplayer.js"></script>
+</head>
+<body>
+<a name="top"><h1>Form Testing</h1>
+<noscript>
+ For full functionality of this site it is necessary to enable JavaScript.
+ Here are the <a href="http://www.enable-javascript.com/" target="_blank">
+ instructions how to enable JavaScript in your web browser</a>.
+</noscript>
+<INPUT Type="button" style="cursor:pointer;" VALUE="Back" onClick="history.go(-1);return true;"><INPUT Type="button" style="cursor:pointer;" VALUE="Close" onClick="javascript:window.open('','_self').close();">
+<form action="http://www.youtube.com/watch" target="_blank">
+<label>Video ID:<input type="text" name="v" size="10" value="tKNhPpUR0Pg"></label>
+<label><input type="submit" formaction="http://www.youtube.com/embed/tKNhPpUR0Pg" style="cursor:pointer;" value="Embed Page Handler"><!-- that << is supposed to go to `embed/[videoid]?[flags]` --></label>
+<label><input type="reset" style="cursor:pointer;" value="Reset"></label>
+<hr>
+<input type="submit" formaction="http://www.youtube.com/embed/" style="cursor:pointer;" value="Embed Page Handler-No Method">
+<input type="submit" formaction="http://www.youtube.com/embed/" style="cursor:pointer;" value="Embed Page Handler-Method=post" method=post>
+<input type="submit" formaction="http://www.youtube.com/embed/" style="cursor:pointer;" value="Embed Page Handler-Method='post'" method="post">
+<input type="submit" formaction="http://www.youtube.com/embed/" style="cursor:pointer;" value="Embed Page Handler-Method=get" method=get>
+<input type="submit" formaction="http://www.youtube.com/embed/" style="cursor:pointer;" value="Embed Page Handler-Method='get'" method="get">
+</form>
+</body>
+</html>
