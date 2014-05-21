@@ -14,6 +14,9 @@
  instructions how to enable JavaScript in your web browser</a>.
 </noscript>
 <INPUT Type="button" VALUE="Back" onClick="history.go(-1);return true;"><INPUT Type="button" VALUE="Close" onClick="javascript:window.open('','_self').close();">
+<div style="float:right; width:350px; text-align:right;">
+On Windows? Get the <a href="http://github.com/Walkman100/YTVL/releases/latest" target="_blank">Windows version</a> of this page! Starts up quickly, and has an option to use a taskbar icon. It also works properly :D
+</div>
 <form action="http://www.youtube.com/watch" target="_blank">
 <label>Video ID:<input type="text" name="v" size="10" value="tKNhPpUR0Pg"></label>
 <br><label>Time:<input type="text" name="t" size="3" maxlength="6"> <font size='2'>(e.g. 1m28s)</font></label>
@@ -26,7 +29,7 @@
 <label><input type="submit" formaction="http://www.youtube.com/get_video_info?video_id="+v+"&fmt=18" value="Get Video Info"></label>
 <label><input type="submit" formaction="http://www.youtube.com/embed/tKNhPpUR0Pg" value="Embed Page Handler"><!-- that << is supposed to go to `embed/[videoid]?[flags]` --></label>
 <label><input type="reset" value="Reset"></label>
-<hr width=100%>&nbsp;<b>Flags that don't seem to do anything</b>&nbsp;&nbsp;&nbsp;<font size='2'>(Note: they run on the same form as above i.e. same buttons)</font>
+<hr align=left width=725px>&nbsp;<b>Flags that don't seem to do anything</b>&nbsp;&nbsp;&nbsp;<font size='2'>(Note: they run on the same form as above i.e. same buttons)</font>
 <br><label><input type="radio" name="hd" value="0"> Use 360p</label>
 <br><label><input type="radio" name="hd" value="1"> Use 720p (if available)</label>
 <br><label><input type="checkbox" name="feature" value="player_embedded"> Use feature=player_embedded</label>
