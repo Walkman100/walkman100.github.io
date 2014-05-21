@@ -5,5 +5,4 @@ Walkman's site - can also be obtained through: http://sites.google.com/site/wscr
 
 The style sheet that is embedded in almost all pages is `main.css`. I am new to CSS, so any help is appreciated.
 
-Please check out my Youtube Auto Redirector <a href="http://walkman100.github.io/Walkman/youtube-video-stuff.htm">here</a>.
-
+Please check out my Youtube Auto Redirector <a href="http://walkman100.github.io/Walkman/youtube-video-stuff.htm">here</a> and the Windows version [here](http://github.com/Walkman100/YTVL/releases/latest).
