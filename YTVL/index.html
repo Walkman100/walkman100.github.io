@@ -1,0 +1,81 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<HTML>
+<HEAD>
+<TITLE>Table of Contents</TITLE>
+<META NAME="Generator" CONTENT="Easy Index Generator">
+<STYLE TYPE="text/css">
+BODY {background: #FFFFFF}
+H1 {color: #000000; font-size:18pt; font-family: Arial, sans-serif}
+DIV#idx {margin-left: -14px;}
+UL#toc LI {list-style-type: none; margin-left: -24px; color: #000000; font-size: 10pt; font-family: Arial, sans-serif}
+UL#toc SPAN {float: left; width: 16px; height: 16px; background: center no-repeat}
+UL#toc SPAN {background-image: url(index_item.gif)}
+UL#toc SPAN.close {background-image: url(index_item.gif)}
+UL#toc SPAN.item {background-image: url(index_item.gif)}
+UL#toc LI UL {display: block}
+UL#toc LI.close UL {display: none}
+UL#toc LI A {padding-left: 4px; text-decoration: none; color: #000000}
+UL#toc LI.item A {text-decoration: none; color: #0000FF}
+UL#toc LI.item A:visited {color: #000080}
+UL#toc LI.item A:hover {text-decoration: underline; color: #FF0000}
+</STYLE>
+<SCRIPT LANGUAGE="JavaScript">
+<!-- 
+function collapseAll()
+{
+  var LItems=document.getElementById("toc").getElementsByTagName("LI");
+  for(o=0; o<LItems.length; o++)
+  {
+	if (LItems[o].className=="")
+    {
+       LItems[o].className="close";
+    }
+    if (LItems[o].getElementsByTagName("ul").length>0)
+    {
+      curChilds=LItems[o].getElementsByTagName("SPAN")
+      if (curChilds.length>0)
+      {
+        curChilds[0].onclick=function(){ShowHide(this.parentNode);}
+        if (curChilds[0].className=="")
+        {
+          curChilds[0].className="close";
+        }
+      }
+      curChilds=LItems[o].getElementsByTagName("A")
+      if (curChilds.length>0)
+      {
+        curChilds[0].onclick=function(){ShowHide(this.parentNode);return false;}
+      }
+    }
+  }
+}
+
+function ShowHide(curHeader)
+{
+  if (curHeader.className=="close")
+  {
+    curHeader.className="";
+    curHeader.firstChild.className="";
+  }
+  else if (curHeader.className=="")
+  {
+    curHeader.className="close";
+    curHeader.firstChild.className="close";
+  }
+}
+//-->
+</SCRIPT>
+</HEAD>
+<BODY onLoad="collapseAll();">
+<H1>YTVL Screenshots</H1>
+<DIV ID="idx">
+<UL ID="toc">
+	<LI CLASS="item"><SPAN CLASS="item"></SPAN><A target="blank" HREF="DefaultInterface.png">Default Interface</A></LI>
+	<LI CLASS="item"><SPAN CLASS="item"></SPAN><A target="blank" HREF="NotificationIconContextMenu.png">Notification Icon Context Menu</A></LI>
+	<LI CLASS="item"><SPAN CLASS="item"></SPAN><A target="blank" HREF="NotificationIconPopup.png">Notification Icon Popup</A></LI>
+	<LI CLASS="item"><SPAN CLASS="item"></SPAN><A target="blank" HREF="AdvancedOptions.png">Advanced Options</A></LI>
+	<LI CLASS="item"><SPAN CLASS="item"></SPAN><A target="blank" HREF="AdvancedOptionsWithDebugKeyCombinationPressed.png"> Advanced Options - with debug key combination pressed</A></LI>
+</UL>
+</DIV>
+</BODY>
+</HTML>
