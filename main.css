@@ -2,13 +2,23 @@ body {
 background : snow;
 font-family : Verdana, Geneva, sans-serif;
 font-size : 14px;
-text-decoration : none;
 }
 
 h1 {
-text-indent : 2%;
+margin-left : 30px;
 }
 
 hr {
-size : 2
+size : 2;
+}
+
+div.flright {
+float : right;
+width : 350px;
+text-align : center;
+margin-right : 5px;
+border : 2px solid #a1a1a1;
+padding : 10px 20px; 
+background : #dddddd;
+border-radius:25px;
 }
