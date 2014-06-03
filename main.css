@@ -1,15 +1,30 @@
 body {
-background : snow;
+background : grey;
 font-family : Verdana, Geneva, sans-serif;
 font-size : 14px;
 }
 
-h1 {
-margin-left : 30px;
+div.banner {
+width : 95%;
+height : 100%;
+margin-right:auto;
+margin-left:auto;
+text-align : center;
+border : 2px solid #a1a1a1;
+padding : 10px 20px; 
+background : snow;
+border-radius:25px;
 }
 
-hr {
-size : 2;
+div.main {
+/* text-align : justify; */
+width : 750px;
+margin-right:auto;
+margin-left:auto;
+border : 2px solid #a1a1a1;
+padding : 10px 20px; 
+background : snow; /* What colour is best, snow or seashell? */
+border-radius:25px;
 }
 
 div.flright {
@@ -21,4 +36,8 @@ border : 2px solid #a1a1a1;
 padding : 10px 20px; 
 background : #dddddd;
 border-radius:25px;
+}
+
+h1 {
+margin-left : 30px;
 }
