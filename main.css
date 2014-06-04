@@ -4,6 +4,44 @@ font-family : Verdana, Geneva, sans-serif;
 font-size : 14px;
 }
 
+body.framesetLeft {
+background : snow;
+border-top-color: rgb(161, 161, 161);
+border-top-style: solid;
+border-top-width: 2px;
+border-bottom-color: rgb(161, 161, 161);
+border-bottom-style: solid;
+border-bottom-width: 2px;
+border-left-color: rgb(161, 161, 161);
+border-left-style: solid;
+border-left-width: 2px;
+padding-right: 10px;
+padding-bottom: 10px;
+padding-left: 10px;
+border-top-left-radius: 25px;
+border-top-right-radius: 3px;
+border-bottom-right-radius: 3px;
+border-bottom-left-radius: 25px;
+}
+
+body.framesetRight {
+background : snow;
+border-top-color: rgb(161, 161, 161);
+border-top-style: solid;
+border-top-width: 2px;
+border-bottom-color: rgb(161, 161, 161);
+border-bottom-style: solid;
+border-bottom-width: 2px;
+border-right-color: rgb(161, 161, 161);
+border-right-style: solid;
+border-right-width: 2px;
+padding : 0px 10px;
+border-top-left-radius: 3px;
+border-top-right-radius: 25px;
+border-bottom-right-radius: 25px;
+border-bottom-left-radius: 3px;
+}
+
 div.banner {
 width : 95%;
 height : 100%;
