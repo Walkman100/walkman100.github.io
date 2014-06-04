@@ -1,14 +1,20 @@
 <!DOCTYPE html>
-<HTML>
-<HEAD>
+<html>
+<head>
 <TITLE>Close Tab Auto-redirect</TITLE>
-<SCRIPT LANGUAGE="JavaScript"></SCRIPT>
+<link rel="shortcut icon" href="images/favicon.ico">
 <link rel="stylesheet" href="main.css" type="text/css">
+<script type="text/javascript" src="jwplayer.js"></script>
 <META HTTP-EQUIV="refresh" CONTENT="0;url=javascript:window.open('','_self').close();">
-</HEAD>
-<BODY>
-<FORM>
-<INPUT Type="button" VALUE="Close tab" onClick="javascript:window.open('','_self').close();">
-</FORM>
+</head>
+<body>
+<a name="top">
+<div class="main">
+<noscript>
+ For full functionality of this site it is necessary to enable JavaScript.
+ Here are the <a href="http://www.enable-javascript.com/" target="_blank">
+ instructions how to enable JavaScript in your web browser</a>.
+</noscript>
+<INPUT Type="button" VALUE="Close tab" onClick="javascript:window.open('','_self').close();"> <INPUT Type="button" VALUE="Back" onClick="history.go(-1);return true;">
 </body>
 </html>
