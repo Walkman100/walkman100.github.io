@@ -1,81 +1,54 @@
-body {
+body { /* Background of everything, sets main font */
 background : grey;
 font-family : Verdana, Geneva, sans-serif;
 font-size : 14px;
 }
 
-body.framesetLeft {
-background : snow;
-border-top-color: rgb(161, 161, 161);
-border-top-style: solid;
-border-top-width: 2px;
-border-bottom-color: rgb(161, 161, 161);
-border-bottom-style: solid;
-border-bottom-width: 2px;
-border-left-color: rgb(161, 161, 161);
-border-left-style: solid;
-border-left-width: 2px;
-padding-right: 10px;
-padding-bottom: 10px;
-padding-left: 10px;
-border-top-left-radius: 25px;
-border-top-right-radius: 3px;
-border-bottom-right-radius: 3px;
-border-bottom-left-radius: 25px;
+div { /* For any div element */
+background : snow; /* What colour is best, snow or seashell? */
+border : 2px solid #a1a1a1;
+padding : 10px 20px; 
+border-radius : 25px;
 }
 
-body.framesetRight {
-background : snow;
-border-top-color: rgb(161, 161, 161);
-border-top-style: solid;
-border-top-width: 2px;
-border-bottom-color: rgb(161, 161, 161);
-border-bottom-style: solid;
-border-bottom-width: 2px;
-border-right-color: rgb(161, 161, 161);
-border-right-style: solid;
-border-right-width: 2px;
-padding : 0px 10px;
+.banner { /* Top of mainpage.htm */
+width : 95%;
+height : 100%;
+margin-right : auto;
+margin-left : auto;
+text-align : center;
+}
+
+.main { /* main site content */
+width : 750px;
+margin-right : auto;
+margin-left : auto;
+/* text-align : justify; */
+}
+
+.flright { /* for a floating/notification on the right */
+background : #dddddd;
+width : 350px;
+float : right;
+margin-right : 5px;
+text-align : center;
+}
+
+.framesetLeft { /* for left of a frameset, contains navigation */
+margin-right : -8px;
+border-right-width: 0px;
+padding-top: 0px;
+border-top-right-radius: 3px;
+border-bottom-right-radius: 3px;
+}
+
+.framesetRight { /* for any page that goes on the right of a frameset, currently only blank.htm */
+margin-left : -10px;
+border-left-width: 2px;
 border-top-left-radius: 3px;
-border-top-right-radius: 25px;
-border-bottom-right-radius: 25px;
 border-bottom-left-radius: 3px;
 }
 
-div.banner {
-width : 95%;
-height : 100%;
-margin-right:auto;
-margin-left:auto;
-text-align : center;
-border : 2px solid #a1a1a1;
-padding : 10px 20px; 
-background : snow;
-border-radius:25px;
-}
-
-div.main {
-/* text-align : justify; */
-width : 750px;
-margin-right:auto;
-margin-left:auto;
-border : 2px solid #a1a1a1;
-padding : 10px 20px; 
-background : snow; /* What colour is best, snow or seashell? */
-border-radius:25px;
-}
-
-div.flright {
-float : right;
-width : 350px;
-text-align : center;
-margin-right : 5px;
-border : 2px solid #a1a1a1;
-padding : 10px 20px; 
-background : #dddddd;
-border-radius:25px;
-}
-
-h1 {
+h1 { /* indent headings */
 margin-left : 30px;
 }
