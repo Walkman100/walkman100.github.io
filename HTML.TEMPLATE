@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>Contact Me</title>
+        <title>!!Title!!</title>
         <link rel="shortcut icon" href="/favicon.ico">
         <link rel="stylesheet" href="../CSS_JS/main.css" type="text/css">
         <script type="text/javascript" src="../CSS_JS/jwplayer.js"></script>
@@ -9,7 +9,7 @@
     <body>
         <a name="top">
         <div class="main">
-            <h1>Contact Me</h1>
+            <h1>!!Title!!</h1>
             <noscript>
                 For full functionality of this site it is necessary to enable JavaScript.
                 Here are the <a href="http://www.enable-javascript.com/" target="_blank">

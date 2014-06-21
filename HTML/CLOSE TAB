@@ -1,22 +1,21 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>Contact Me</title>
+        <TITLE>Close Tab Auto-redirect</TITLE>
         <link rel="shortcut icon" href="/favicon.ico">
         <link rel="stylesheet" href="../CSS_JS/main.css" type="text/css">
         <script type="text/javascript" src="../CSS_JS/jwplayer.js"></script>
+        <META HTTP-EQUIV="refresh" CONTENT="0;url=javascript:window.open('','_self').close();">
     </head>
     <body>
         <a name="top">
         <div class="main">
-            <h1>Contact Me</h1>
             <noscript>
                 For full functionality of this site it is necessary to enable JavaScript.
                 Here are the <a href="http://www.enable-javascript.com/" target="_blank">
                 instructions how to enable JavaScript in your web browser</a>.
             </noscript>
-            <a name="btns"><INPUT Type="button" VALUE="Back" onClick="history.go(-1);return true;"><INPUT Type="button" VALUE="Close" onClick="javascript:window.open('','_self').close();">
-            <br>!!Content!!
+            <INPUT Type="button" VALUE="Close tab" onClick="javascript:window.open('','_self').close();"> <INPUT Type="button" VALUE="Back" onClick="history.go(-1);return true;">
         </div>
     </body>
 </html>

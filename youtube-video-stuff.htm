@@ -1,90 +1,21 @@
 <!DOCTYPE html>
 <html>
-<head>
-<title>YouTube Video Auto-Link</title>
-<link rel="shortcut icon" href="images/favicon.ico">
-<link rel="stylesheet" href="main.css" type="text/css">
-<script type="text/javascript" src="jwplayer.js"></script>
-<!-- <META HTTP-EQUIV="refresh" CONTENT="10"> -->
-</head>
-<body>
-<a name="top">
-<div class="main">
-<h1>YouTube Video Auto-Link</h1>
-<noscript>
- For full functionality of this site it is necessary to enable JavaScript.
- Here are the <a href="http://www.enable-javascript.com/" target="_blank">
- instructions how to enable JavaScript in your web browser</a>.
-</noscript>
-<INPUT Type="button" VALUE="Back" onClick="history.go(-1);return true;"><INPUT Type="button" VALUE="Close" onClick="javascript:window.open('','_self').close();">
-<div class="flright"> <!-- style="background-color:cyan"> -->
-On Windows? Get the <a href="http://github.com/Walkman100/YTVL/releases/latest" target="_blank">Windows version</a> of this page! Starts up quickly, and has an option to use a taskbar icon. It also works properly :D
-<br>Screenshots available <a href="YTVL/">here</a>.
-</div>
-<form action="http://www.youtube.com/watch" target="_blank">
-<label>Video ID:<input type="text" name="v" size="10" value="tKNhPpUR0Pg"></label>
-<br><label>Time:<input type="text" name="t" size="3" maxlength="6"> <font size='2'>(e.g. 1m28s)</font></label>
-<br><label><input type="checkbox" name="nofeather" value="True" checked="checked"> Use noFeather</label> <font size='1'>(Sign up for YTF <a href="http://www.youtube.com/testtube" target="_blank">here</a>)</font>
-<br><label><input type="checkbox" name="hl" value="en"> <font size='2'>Use hl=en (Language Flag)</font></label>
-<div class="flright">
-A page that just adds start time to your URL can be found <a href="http://youtubetime.com/">here</a>.
-</div>
-<br><label>List: <input type="text" name="list" size="27"> </label><font size='2'>(e.g. LLGqoiAgPKop0NEymu9WZxkQ )</font>
-<br>
-<label><input type="submit" formaction="http://www.youtube.com/watch" value="Video"></label>
-<label><input type="submit" formaction="http://www.youtube.com/all_comments" value="Comments"></label>
-<label><input type="submit" formaction="http://www.youtube.com/get_video_info?video_id="+v+"&fmt=18" value="Get Video Info"></label>
-<label><input type="submit" formaction="http://www.youtube.com/embed/tKNhPpUR0Pg" value="Embed Page Handler"><!-- that << is supposed to go to `embed/[videoid]?[flags]` --></label>
-<label><input type="reset" value="Reset"></label>
-<hr align=left width=725px>&nbsp;<b>Flags that don't seem to do anything</b>&nbsp;&nbsp;&nbsp;<font size='2'>(Note: they run on the same form as above i.e. same buttons)</font>
-<br><label><input type="radio" name="hd" value="0"> Use 360p</label>
-<br><label><input type="radio" name="hd" value="1"> Use 720p (if available)</label>
-<br><label><input type="checkbox" name="feature" value="player_embedded"> Use feature=player_embedded</label>
-<br>Use autoplay= <label><input type="radio" name="autoplay" value="0">0</label> <label><input type="radio" name="autoplay" value="1">1</label>
-<br>Use fs= <label><input type="radio" name="fs" value="0">0</label> <label><input type="radio" name="fs" value="1">1</label>
-<br>Use autohide= <label><input type="radio" name="autohide" value="0">0</label> <label><input type="radio" name="autohide" value="1">1</label>
-<br>Use enablejsapi= <label><input type="radio" name="enablejsapi" value="0">0</label> <label><input type="radio" name="enablejsapi" value="1">1</label>
-<br>Use iv_load_policy= <select name="iv_load_policy"><option></option><option value="0">0</option><option value="1">1</option><option value="2">2</option><option value="3">3</option><option value="4">4</option><option value="5">5</option><option value="6">6</option><option value="7">7</option></select>
-<br>Use modestbranding= <label><input type="radio" name="modestbranding" value="0">0</label> <label><input type="radio" name="modestbranding" value="1">1</label>
-<br>Use rel= <label><input type="radio" name="rel" value="0">0</label> <label><input type="radio" name="rel" value="1">1</label>
-<br>Use showinfo= <label><input type="radio" name="showinfo" value="0">0</label> <label><input type="radio" name="showinfo" value="1">1</label>
-<br>Use showsearch= <label><input type="radio" name="showsearch" value="0">0</label> <label><input type="radio" name="showsearch" value="1">1</label>
-<br><label><input type="checkbox" name="theme" value="dark"> Use theme=dark</label>
-<br><label><input type="checkbox" name="start" value="10"> Use start=10</label>
-<br><label><input type="checkbox" name="end" value="200"> Use end=200</label>
-<br><label><input type="checkbox" name="wmode" value="transparent"> Use wmode=transparent</label>
-<br><label><input type="checkbox" name="origin" value="http%3A%2F%2F9gag.tv"> Use origin=http%3A%2F%2F9gag.tv</label>
-</form>
-</div>
-</body>
+    <head>
+        <TITLE>YTVL Auto-redirect</TITLE>
+        <link rel="shortcut icon" href="/favicon.ico">
+        <link rel="stylesheet" href="/Walkman/CSS_JS/main.css" type="text/css">
+        <script type="text/javascript" src="/Walkman/CSS_JS/jwplayer.js"></script>
+        <META HTTP-EQUIV="refresh" CONTENT="0;url=HTML/YTVL.html">
+    </head>
+    <body>
+        <a name="top">
+        <div class="main">
+            <noscript>
+                For full functionality of this site it is necessary to enable JavaScript.
+                Here are the <a href="http://www.enable-javascript.com/" target="_blank">
+                instructions how to enable JavaScript in your web browser</a>.
+            </noscript>
+            <INPUT Type="button" VALUE="Continue" onClick="parent.location='HTML/YTVL.html'">
+        </div>
+    </body>
 </html>
-<!-- Examples (taken from other embedded stuff e.t.c.)
-https://www.youtube.com/embed/R-XMtdBENRo?autoplay=0&fs=1&autohide=1&wmode=transparent&iv_load_policy=3&modestbranding=1&rel=0&showinfo=0&origin=http%3A%2F%2F9gag.tv&start=10&end=200&enablejsapi=1
-http://www.youtube.com/embed/p_RTL0hFgCc?wmode=transparent&fs=1&hl=en&autoplay=1&modestbranding=1&iv_load_policy=3&showsearch=0&rel=1&theme=dark
-https://www.youtube.com/watch?feature=player_embedded&v=R-XMtdBENRo#t=0
-https://www.youtube.com/watch?v=9-PAYHLJCZY&list=LLGqoiAgPKop0NEymu9WZxkQ
-
-<iframe width="1280" height="720" src="//www.youtube.com/embed/tKNhPpUR0Pg?rel=0" frameborder="0" allowfullscreen></iframe>
-
-<form>Video ID:<input type="text" name="v" size="10" value="u0fk6syQ7iY">
-      <input type="submit" formaction="http://www.youtube.com/watch" value="Go" />
-      <input type="submit" formaction="http://www.youtube.com/all_comments" value="Comments" />
-    </form>
-feature=player_embedded
-list=LLGqoiAgPKop0NEymu9WZxkQ
-autoplay=0
-fs=1
-autohide=1
-wmode=transparent
-iv_load_policy=3
-modestbranding=1
-rel=0   rel=1
-showinfo=0
-origin=http%3A%2F%2F9gag.tv
-start=10
-end=200
-enablejsapi=1 
-hl=en
-showsearch=0
-theme=dark 
--->
