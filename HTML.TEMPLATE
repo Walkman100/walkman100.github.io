@@ -7,7 +7,7 @@
         <script type="text/javascript" src="../CSS_JS/jwplayer.js"></script>
     </head>
     <body>
-        <a name="top">
+        <a name="top"></a>
         <div class="main">
             <h1>!!Title!!</h1>
             <noscript>
@@ -15,7 +15,7 @@
                 Here are the <a href="http://www.enable-javascript.com/" target="_blank">
                 instructions how to enable JavaScript in your web browser</a>.
             </noscript>
-            <a name="btns"><INPUT Type="button" VALUE="Back" onClick="history.go(-1);return true;"><INPUT Type="button" VALUE="Close" onClick="javascript:window.open('','_self').close();">
+            <a name="btns"><INPUT Type="button" VALUE="Back" onClick="history.go(-1);return true;"><INPUT Type="button" VALUE="Close" onClick="javascript:window.open('','_self').close();"></a>
             <br>!!Content!!
         </div>
     </body>
