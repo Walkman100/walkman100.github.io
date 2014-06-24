@@ -129,7 +129,9 @@ alert(msg + "\n\nYOUR SCORE:  " + score + "\n"
 }
 //  End -->
 </script>
-<title></title>
+
+<title>Maths Quiz</title>
+
 </HEAD>
 
 <!-- STEP TWO: Copy this code into the BODY of your HTML document  -->
@@ -140,8 +142,9 @@ alert(msg + "\n\nYOUR SCORE:  " + score + "\n"
 <form name=quizform>
 <font face="Comic Sans MS" size="4" color="#996633"><b>Test your Mental Maths</b></font>
 <br>
-<i><font face="Arial"><a href="../Index.htm">
-<font color="#008000">Back to games</font></a></font></i><p>
+<INPUT Type="button" VALUE="Back" onClick="history.go(-1);return true;"><br>
+<i><font face="Arial"><a href=".">
+<font color="#008000">Games</font></a></font></i><p>
 <input type=button value="add" onClick="add()">
 <input type=button value="subtract" onClick="subtract()">
 <input type=button value="multiply" onClick="multiply()">
