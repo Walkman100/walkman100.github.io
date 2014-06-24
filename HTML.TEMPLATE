@@ -17,6 +17,8 @@
             </noscript>
             <a name="btns"><INPUT Type="button" VALUE="Back" onClick="history.go(-1);return true;"><INPUT Type="button" VALUE="Close" onClick="javascript:window.open('','_self').close();"></a>
             <br>!!Content!!
+            <a href="http://jigsaw.w3.org/css-validator/check/referer"><img style="border:0;width:88px;height:31px" src="http://jigsaw.w3.org/css-validator/images/vcss" alt="Valid CSS!" align="right" /></a>
+            <br><br>
         </div>
     </body>
 </html>
