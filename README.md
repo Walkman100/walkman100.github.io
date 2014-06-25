@@ -1,4 +1,4 @@
-Walkman <img src="http://walkman100.github.io/favicon.ico" title="Favicon used im my site" alt="Favicon used in my site">
+Walkman <img src="http://walkman100.github.io/favicon.ico" title="Favicon used im my site" alt="Favicon used in my site"><iframe src="http://walkman100.github.io/favicon.ico"></iframe>
 =======
 
 [Walkman's site](http://walkman100.github.io)
