@@ -1,4 +1,4 @@
-Walkman ![Favicon used in my site](http://walkman100.github.io/favicon.ico "Favicon used im my site")
+Walkman <img src="http://walkman100.github.io/favicon.ico" title="Favicon used im my site" alt="Favicon used in my site">
 =======
 
 [Walkman's site](http://walkman100.github.io)
