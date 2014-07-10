@@ -1,0 +1,71 @@
+
+<!-- ONE STEP TO INSTALL KNIGHT GAME:
+
+  1.  Copy the coding into the BODY of your HTML document  -->
+
+<!-- STEP ONE: Paste this code into the BODY of your HTML document  -->
+
+<html>
+<head>
+<title>Knight Game</title>
+</head>
+
+<BODY>
+
+<!-- This script and many more are available free online at -->
+<!-- The JavaScript Source!! http://javascript.internet.com -->
+<!-- Original:  Ben Joffe -->
+<!-- Web Site:  http://www.joffe.tk/ -->
+<script>
+document.write('<center><table style=cursor:pointer;cursor:hand border=2 cellpadding=0 cellspacing=0>')
+var squarenum=0;
+var curnum=0;
+curcol="#996633";
+for(var count1=0; count1<8; count1++){
+document.write('<tr>')
+if(curcol=="#996633") {curcol="#663300"} else curcol="#996633";
+for(var count=0; count<8; count++){
+if(curcol=="#996633") {curcol="#663300"} else curcol="#996633";
+document.write('<td bgcolor='+curcol+' id='+curnum+' name='+squarenum+' width=50 height=50 onclick=\"moveto(this);\"> </td>');
+curnum++;
+squarenum++
+}
+document.write('</tr>')
+curnum+=20;
+}
+document.write('</table>')
+document.getElementById(0).innerHTML="<img src=horse.gif>";
+document.getElementById(0).bgColor="#FF99FF";
+var squares=new Array(true);
+
+var score=0;
+var where;
+var oldwhere=0;
+function moveto(square){
+where=square.id;
+if ((oldwhere==where-26 || oldwhere==where-30 || oldwhere==where-55 || oldwhere==where-57 || oldwhere-26==where || oldwhere-30==where || oldwhere-55==where || oldwhere-57==where))
+{
+score++;
+document.getElementById("scorey").innerHTML=score;
+document.getElementById(oldwhere).innerHTML=" ";
+document.getElementById(where).innerHTML="<img src=horse.gif width=48 height=48>";
+document.getElementById(where).bgColor="#FF99FF";
+oldwhere=where;
+squares[square.name]=true;
+}
+for (var i=0; i<63; i++) if (squares[i]!=true) var stuffed=true
+if (stuffed!=true) {alert("You win in only "+score+" moves!");window.location.href=window.location.href;}
+}
+</script>
+<p><font face="Arial">Score: <span id=scorey>0</span></font><p>
+<font face="Arial">You need to cover the board with as few moves as possible.</font></center><p align="center">
+<INPUT Type="button" VALUE="Back" onClick="history.go(-1);return true;"><br>
+<i><font face="Arial"><a href="."><font color="#008000">Games</font></a></font></i></p>
+<p>&nbsp;
+
+<p>
+
+<!-- Script Size:  2.06 KB -->
+</p></p></p></p>
+</body>
+</html>

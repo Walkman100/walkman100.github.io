@@ -1,0 +1,230 @@
+ 
+
+<!-- TWO STEPS TO INSTALL HIT THE DOT:
+
+   1.  Paste the coding into the HEAD of your HTML document
+   2.  Put the last coding into the BODY of your HTML document  -->
+
+<!-- STEP ONE: Copy this code into the HEAD of your HTML document  -->
+
+<HEAD>
+
+<SCRIPT LANGUAGE="JavaScript">
+<!-- Original:  Josh Birk  -->
+
+<!-- This script and many more are available free online at -->
+<!-- The JavaScript Source!! http://javascript.internet.com -->
+
+<!-- Begin
+gamelength=30;
+timerID=null
+var playing=false;
+var numholes=6*10;
+var currentpos=-1;
+function clrholes() {
+for(var k=0;k<document.dmz.elements.length;k++)
+document.dmz.elements[k].checked=false;
+}
+function stoptimer() {
+if(playing)
+clearTimeout(timerID);
+}
+function showtime(remtime) {
+document.cpanel.timeleft.value=remtime;
+if(playing) {
+if(remtime==0) {
+stopgame();
+return;
+}
+else {
+temp=remtime-1;
+timerID=setTimeout("showtime(temp)",1000);
+      }
+   }
+}
+function stopgame() {
+stoptimer();
+playing=false;
+document.cpanel.timeleft.value=0;
+clrholes();
+display("Game Over");
+alert('Game Over.\nYour score is:  '+totalhits);
+}
+function play() {
+stoptimer();
+if(playing) {
+stopgame();
+return;
+}
+playing=true;
+clrholes();
+totalhits=0;
+document.cpanel.score.value=totalhits;
+display("Playing");
+launch();
+showtime(gamelength);
+}
+function display(msg) {
+document.cpanel.state.value=msg;
+}
+function launch() {
+var launched=false;
+while(!launched) {
+mynum=random();
+if(mynum!=currentpos) {
+document.dmz.elements[mynum].checked=true;
+currentpos=mynum;
+launched=true;
+      }
+   }
+}
+
+function hithead(id) {
+if(playing==false) {
+clrholes();
+display("Push Start to Play");
+return;
+}
+if(currentpos!=id) {
+totalhits+=-1;
+document.cpanel.score.value=totalhits;
+document.dmz.elements[id].checked=false;
+}
+else {
+totalhits+=1;
+document.cpanel.score.value=totalhits;
+launch();
+document.dmz.elements[id].checked=false;
+   }
+}
+
+function random() {
+return(Math.floor(Math.random()*100%numholes));
+}
+// End -->
+</script>
+
+<!-- STEP TWO: Copy this code into the BODY of your HTML document  -->
+
+<title>Hit the Dots</title>
+</head>
+
+<body bgcolor="#99CCFF">
+
+<center><b><font face="Comic Sans MS" size="5">Hit-the-Dots<br>
+</font></b><span style="font-weight: 400"><font face="Arial">
+<INPUT Type="button" VALUE="Back" onClick="history.go(-1);return true;"><br>
+<a href="." style="text-decoration: none; font-style: italic">
+<font color="#008000" size="4">Games</font></a></font></span></center>
+<center><font face="Comic Sans MS">Test your skill.  How many boxes can you check in 30 seconds?</font></center>
+<form name="cpanel">
+<center>
+<table cellspacing=3>
+<tr>
+<td><font face="Comic Sans MS"><input type="button" name="startstop" value=" Start Game | Stop Game " onClick="play()"></font></td>
+<td><pre><font face="Comic Sans MS">    </font></pre></td>
+<td align=right><font face="Comic Sans MS">Time:</font></td>
+<td><font face="Comic Sans MS"><input type="text" name="timeleft" size="4" onFocus="this.blur()"></font></td>
+</tr>
+<tr>
+<td><font face="Comic Sans MS"><input type="text" name="state" size="20" value="Push Start to Play" onFocus="this.blur()"></font></td>
+<td><pre><font face="Comic Sans MS">    </font></pre></td>
+<td align=right><font face="Comic Sans MS">Score:</font></td>
+<td><font face="Comic Sans MS"><input type="text" name="score" size="4" onFocus="this.blur()"></font></td>
+</tr>
+</table>
+</center>
+</form>
+<form name="dmz">
+<center>
+<table cellspacing=3>
+<tr>
+<td colspan=10><hr size=1></td>
+</tr>
+<tr>
+<td align="center" valign="center"><font face="Comic Sans MS"><input type="radio" onClick="hithead(0)"></font></td>
+<td align="center" valign="center"><font face="Comic Sans MS"><input type="radio" onClick="hithead(1)"></font></td>
+<td align="center" valign="center"><font face="Comic Sans MS"><input type="radio" onClick="hithead(2)"></font></td>
+<td align="center" valign="center"><font face="Comic Sans MS"><input type="radio" onClick="hithead(3)"></font></td>
+<td align="center" valign="center"><font face="Comic Sans MS"><input type="radio" onClick="hithead(4)"></font></td>
+<td align="center" valign="center"><font face="Comic Sans MS"><input type="radio" onClick="hithead(5)"></font></td>
+<td align="center" valign="center"><font face="Comic Sans MS"><input type="radio" onClick="hithead(6)"></font></td>
+<td align="center" valign="center"><font face="Comic Sans MS"><input type="radio" onClick="hithead(7)"></font></td>
+<td align="center" valign="center"><font face="Comic Sans MS"><input type="radio" onClick="hithead(8)"></font></td>
+<td align="center" valign="center"><font face="Comic Sans MS"><input type="radio" onClick="hithead(9)"></font></td>
+</tr>
+<tr>
+<td align="center" valign="center"><font face="Comic Sans MS"><input type="radio" onClick="hithead(10)"></font></td>
+<td align="center" valign="center"><font face="Comic Sans MS"><input type="radio" onClick="hithead(11)"></font></td>
+<td align="center" valign="center"><font face="Comic Sans MS"><input type="radio" onClick="hithead(12)"></font></td>
+<td align="center" valign="center"><font face="Comic Sans MS"><input type="radio" onClick="hithead(13)"></font></td>
+<td align="center" valign="center"><font face="Comic Sans MS"><input type="radio" onClick="hithead(14)"></font></td>
+<td align="center" valign="center"><font face="Comic Sans MS"><input type="radio" onClick="hithead(15)"></font></td>
+<td align="center" valign="center"><font face="Comic Sans MS"><input type="radio" onClick="hithead(16)"></font></td>
+<td align="center" valign="center"><font face="Comic Sans MS"><input type="radio" onClick="hithead(17)"></font></td>
+<td align="center" valign="center"><font face="Comic Sans MS"><input type="radio" onClick="hithead(18)"></font></td>
+<td align="center" valign="center"><font face="Comic Sans MS"><input type="radio" onClick="hithead(19)"></font></td>
+</tr>
+<tr>
+<td align="center" valign="center"><font face="Comic Sans MS"><input type="radio" onClick="hithead(20)"></font></td>
+<td align="center" valign="center"><font face="Comic Sans MS"><input type="radio" onClick="hithead(21)"></font></td>
+<td align="center" valign="center"><font face="Comic Sans MS"><input type="radio" onClick="hithead(22)"></font></td>
+<td align="center" valign="center"><font face="Comic Sans MS"><input type="radio" onClick="hithead(23)"></font></td>
+<td align="center" valign="center"><font face="Comic Sans MS"><input type="radio" onClick="hithead(24)"></font></td>
+<td align="center" valign="center"><font face="Comic Sans MS"><input type="radio" onClick="hithead(25)"></font></td>
+<td align="center" valign="center"><font face="Comic Sans MS"><input type="radio" onClick="hithead(26)"></font></td>
+<td align="center" valign="center"><font face="Comic Sans MS"><input type="radio" onClick="hithead(27)"></font></td>
+<td align="center" valign="center"><font face="Comic Sans MS"><input type="radio" onClick="hithead(28)"></font></td>
+<td align="center" valign="center"><font face="Comic Sans MS"><input type="radio" onClick="hithead(29)"></font></td>
+</tr>
+<tr>
+<td align="center" valign="center"><font face="Comic Sans MS"><input type="radio" onClick="hithead(30)"></font></td>
+<td align="center" valign="center"><font face="Comic Sans MS"><input type="radio" onClick="hithead(31)"></font></td>
+<td align="center" valign="center"><font face="Comic Sans MS"><input type="radio" onClick="hithead(32)"></font></td>
+<td align="center" valign="center"><font face="Comic Sans MS"><input type="radio" onClick="hithead(33)"></font></td>
+<td align="center" valign="center"><font face="Comic Sans MS"><input type="radio" onClick="hithead(34)"></font></td>
+<td align="center" valign="center"><font face="Comic Sans MS"><input type="radio" onClick="hithead(35)"></font></td>
+<td align="center" valign="center"><font face="Comic Sans MS"><input type="radio" onClick="hithead(36)"></font></td>
+<td align="center" valign="center"><font face="Comic Sans MS"><input type="radio" onClick="hithead(37)"></font></td>
+<td align="center" valign="center"><font face="Comic Sans MS"><input type="radio" onClick="hithead(38)"></font></td>
+<td align="center" valign="center"><font face="Comic Sans MS"><input type="radio" onClick="hithead(39)"></font></td>
+</tr>
+<tr>
+<td align="center" valign="center"><font face="Comic Sans MS"><input type="radio" onClick="hithead(40)"></font></td>
+<td align="center" valign="center"><font face="Comic Sans MS"><input type="radio" onClick="hithead(41)"></font></td>
+<td align="center" valign="center"><font face="Comic Sans MS"><input type="radio" onClick="hithead(42)"></font></td>
+<td align="center" valign="center"><font face="Comic Sans MS"><input type="radio" onClick="hithead(43)"></font></td>
+<td align="center" valign="center"><font face="Comic Sans MS"><input type="radio" onClick="hithead(44)"></font></td>
+<td align="center" valign="center"><font face="Comic Sans MS"><input type="radio" onClick="hithead(45)"></font></td>
+<td align="center" valign="center"><font face="Comic Sans MS"><input type="radio" onClick="hithead(46)"></font></td>
+<td align="center" valign="center"><font face="Comic Sans MS"><input type="radio" onClick="hithead(47)"></font></td>
+<td align="center" valign="center"><font face="Comic Sans MS"><input type="radio" onClick="hithead(48)"></font></td>
+<td align="center" valign="center"><font face="Comic Sans MS"><input type="radio" onClick="hithead(49)"></font></td>
+</tr>
+<tr>
+<td align="center" valign="center"><font face="Comic Sans MS"><input type="radio" onClick="hithead(50)"></font></td>
+<td align="center" valign="center"><font face="Comic Sans MS"><input type="radio" onClick="hithead(51)"></font></td>
+<td align="center" valign="center"><font face="Comic Sans MS"><input type="radio" onClick="hithead(52)"></font></td>
+<td align="center" valign="center"><font face="Comic Sans MS"><input type="radio" onClick="hithead(53)"></font></td>
+<td align="center" valign="center"><font face="Comic Sans MS"><input type="radio" onClick="hithead(54)"></font></td>
+<td align="center" valign="center"><font face="Comic Sans MS"><input type="radio" onClick="hithead(55)"></font></td>
+<td align="center" valign="center"><font face="Comic Sans MS"><input type="radio" onClick="hithead(56)"></font></td>
+<td align="center" valign="center"><font face="Comic Sans MS"><input type="radio" onClick="hithead(57)"></font></td>
+<td align="center" valign="center"><font face="Comic Sans MS"><input type="radio" onClick="hithead(58)"></font></td>
+<td align="center" valign="center"><font face="Comic Sans MS"><input type="radio" onClick="hithead(59)"></font></td>
+</tr>
+<tr><td colspan=10><hr size=1></td>
+</tr></table></center></form>
+
+<center><table cellspacing=3><tr><td><code>
+<p><strong><font face="Comic Sans MS">Instructions:</font></strong>
+<ol><li><font face="Comic Sans MS">Click on the radio buttons as<BR>
+they are selected randomly by the computer.<BR>
+    </font>
+<li><font face="Comic Sans MS">1 point per hit, minus 1 point per miss.<BR>
+  </font>
+</ol></code></td></tr></table></center>
+
+&nbsp;<p>&nbsp;<p>
+
+<!-- Script Size:  8.18 KB  -->
