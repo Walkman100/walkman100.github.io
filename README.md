@@ -1,4 +1,4 @@
-﻿Walkman <img src="http://walkman100.github.io/favicon.ico" title="Favicon used in my site" alt="Favicon used in my site"><iframe src="http://walkman100.github.io/favicon.ico"></iframe>
+﻿Walkman <img src="http://walkman100.github.io/Walkman/Images/Tempecs_Wallpaper_1440x900 square.bmp" title="Favicon used in my site" alt="Favicon used in my site"><iframe src="http://walkman100.github.io/Walkman/Images/Tempecs_Wallpaper_1440x900 square.bmp"></iframe>
 =======
 
 [Walkman's site](http://walkman100.github.com)

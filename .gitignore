@@ -174,7 +174,8 @@ Thumbs.db
 ehthumbs.db
 
 # Folder config file
-Desktop.ini
+#Desktop.ini
+# Disabled so image folders render properly
 
 # Recycle Bin used on file shares
 $RECYCLE.BIN/
