@@ -1,4 +1,4 @@
-﻿# Walkman <img src="http://walkman100.github.io/Walkman/Images/Tempecs_Wallpaper_1440x900 square.jpg" title="Favicon used in my site" alt="Favicon used in my site">
+﻿# Walkman <img src="http://walkman100.github.io/Walkman/Images/Tempecs_Wallpaper_1440x900 square.jpg" title="Favicon used in my site" width="100" height="100" alt="Favicon used in my site">
 
 [Walkman's site](http://walkman100.github.com)
 
