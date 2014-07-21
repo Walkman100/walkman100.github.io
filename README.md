@@ -9,3 +9,6 @@ Please check out my YouTube Auto Redirector [here](http://walkman100.github.io/W
 
 The HTML pages in this repo all use 4 spaces instead of tabs, and any element that is nested from another element is indented.
 The `HTML.TEMPLATE` file is the base for any files in the HTML folder.
+
+## Donate
+[Show your support!](http://walkman100.github.io\Walkman\HTML\Donate.html)
