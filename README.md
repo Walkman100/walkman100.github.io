@@ -11,4 +11,4 @@ The HTML pages in this repo all use 4 spaces instead of tabs, and any element th
 The `HTML.TEMPLATE` file is the base for any files in the HTML folder.
 
 ## Donate
-[Show your support!](http://walkman100.github.io\Walkman\HTML\Donate.html)
+[Show your support!](http://walkman100.github.io/Walkman/HTML/Donate.html)
