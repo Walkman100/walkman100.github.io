@@ -1,0 +1,9 @@
+[25 Jul 2014  4:39:41.94] Git pushing repo at location "\Users\Matthew\Documents\GitHub\YTVL" 
+[25 Jul 2014  4:40:03.37] Failed to push repo at "\Users\Matthew\Documents\GitHub\YTVL", trying again... 
+[...]
+[25 Jul 2014  4:58:21.70] Failed to push repo at "\Users\Matthew\Documents\GitHub\YTVL", trying again... 
+[25 Jul 2014  4:58:21.71] Git pushing repo at location "\Users\Matthew\Documents\GitHub\YTVL" 
+[25 Jul 2014  4:58:50.94] Git pushing repo at location "\Users\Matthew\Documents\GitHub\YTVL" complete. Don't close CMD window when done was enabled. 
+[25 Jul 2014  4:58:50.94] Unless you specified the "Don't wait for cmd to close before starting next" option, further git commands will not start until the CMD window is closed. 
+[25 Jul 2014  4:58:50.94] Waiting for user intervention... 
+[25 Jul 2014  4:58:50.94] Received user intervention. 
