@@ -1,80 +1,84 @@
 body { /* Background of everything, sets main font */
-background : grey;
-font-family : Verdana, Geneva, sans-serif;
-font-size : 14px;
+    background : grey;
+    font-family : Verdana, Geneva, sans-serif;
+    font-size : 14px;
 }
 
 div { /* For any div element */
-background : snow; /* What colour is best, snow or seashell? */
-border : 2px solid #a1a1a1;
-padding : 10px 20px; 
-border-radius : 25px;
+    background : snow; /* What colour is best, snow or seashell? */
+    border : 2px solid #a1a1a1;
+    padding : 10px 20px; 
+    border-radius : 25px;
 }
 
 .banner { /* Top of mainpage.htm */
-width : 95%;
-height : 100%;
-margin-right : auto;
-margin-left : auto;
-text-align : center;
+    width : 95%;
+    height : 100%;
+    margin-right : auto;
+    margin-left : auto;
+    text-align : center;
 }
 
 .main { /* main site content */
-width : 750px;
-margin-right : auto;
-margin-left : auto;
-/* text-align : justify; */
+    width : 750px;
+    margin-right : auto;
+    margin-left : auto;
+    /* text-align : justify; */
 }
 
 .flright { /* for a floating/notification on the right */
-background : #dddddd;
-width : 350px;
-float : right;
-margin-right : 5px;
-text-align : center;
+    background : #dddddd;
+    width : 350px;
+    float : right;
+    margin-right : 5px;
+    text-align : center;
 }
 
 .framesetLeft { /* for left of a frameset, contains navigation */
-margin-right : -8px;
-border-right-width: 0px;
-padding-top: 0px;
-border-top-right-radius: 3px;
-border-bottom-right-radius: 3px;
+    margin-right : -8px;
+    border-right-width: 0px;
+    padding-top: 0px;
+    border-top-right-radius: 3px;
+    border-bottom-right-radius: 3px;
 }
 
 .framesetRight { /* for any page that goes on the right of a frameset, currently only blank.htm */
-margin-left : -10px;
-border-left-width: 2px;
-border-top-left-radius: 3px;
-border-bottom-left-radius: 3px;
+    margin-left : -10px;
+    border-left-width: 2px;
+    border-top-left-radius: 3px;
+    border-bottom-left-radius: 3px;
 }
 
 .noBorder { /* a div with no border */
-border : 0px;
-padding : 0px 0px; 
-border-radius : 0px;
+    border : 0px;
+    padding : 0px 0px; 
+    border-radius : 0px;
 }
 
 h1 { /* indent headings */
-margin-left : 30px;
+    margin-left : 30px;
 }
 
 a:link.noLink {
-color: #000000;
-text-decoration: none
+    color: #000000;
+    text-decoration: none
 }
 
 a:visited.noLink {
-color: #000000;
-text-decoration: none
+    color: #000000;
+    text-decoration: none
+}
+
+a:hover {
+    text-decoration: underline overline;
 }
 
 a:hover.noLink {
-color: #000000;
-text-decoration: underline
+    color: #000000;
+    text-decoration: underline overline;
 }
 
 a:active.noLink {
-color: #000000;
-text-decoration: none
+    color: #000000;
+    text-decoration: none
 }
