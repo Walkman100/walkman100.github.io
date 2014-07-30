@@ -59,25 +59,31 @@ h1 { /* indent headings */
     margin-left : 30px;
 }
 
+a:link {
+    text-decoration: none;
+}
+a:visited {
+    text-decoration: none;
+}
+a:hover {
+    text-decoration: underline overline;
+}
+a:active {
+    text-decoration: underline overline;
+}
+
 a:link.noLink {
     color: #000000;
     text-decoration: none
 }
-
 a:visited.noLink {
     color: #000000;
     text-decoration: none
 }
-
-a:hover {
-    text-decoration: underline overline;
-}
-
 a:hover.noLink {
     color: #000000;
     text-decoration: underline overline;
 }
-
 a:active.noLink {
     color: #000000;
     text-decoration: none
