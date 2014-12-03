@@ -89,16 +89,35 @@ a:active.noLink {
     text-decoration: none
 }
 
-pre, code, tt {
-  font-size: 12px;
-  font-family: Consolas, "Liberation Mono", Courier, monospace;
+/* Demo at http://walkman100.github.io/Walkman/HTML/BtnNav/Page1.html */
+code {
+  border-radius: 6px;
+  border: 1px solid #e5e5e5;
+  background: #f8f8f8;
+  padding: 1px 6px;
+  
+  overflow-x: auto;
+  margin: 0 0px;
+  white-space: nowrap;
 }
 
-code, tt {
-  margin: 0 0px;
-  padding: 0px 0px;
-  white-space: nowrap;
-  border: 1px solid #eaeaea;
-  background-color: #f8f8f8;
-  border-radius: 3px;
+blockquote {
+  font-style: italic;
+  padding: 0 0 0 20px;
+  border-left: 2px solid #e5e5e5;
+  margin: 0;
+}
+
+kbd {
+background-color: #e7e7e7;
+background-image: -webkit-linear-gradient(#fefefe, #e7e7e7);
+background-image: linear-gradient(#fefefe, #e7e7e7);
+background-repeat: repeat-x;
+display: inline-block;
+padding: 3px 5px;
+font: 13px Consolas, "Liberation Mono", Menlo, Courier, monospace;
+line-height: 10px;
+color: #000;
+border: 1px solid #cfcfcf;
+border-radius: 2px;
 }
