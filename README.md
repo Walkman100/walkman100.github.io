@@ -1,7 +1,6 @@
-Walkman [<img src="http://walkman100.github.io/Walkman/Images/Tempecs_Wallpaper_1440x900 square.jpg" title="Favicon used in my site" width="40" height="40" alt="Favicon used in my site">](http://walkman100.github.io/Walkman/Images/Tempecs_Wallpaper_1440x900 square.jpg)
-=======
+# Walkman [<img src="http://walkman100.github.io/Walkman/Images/Tempecs_Wallpaper_1440x900 square.jpg" title="Favicon used in my site" width="40" height="40" alt="Favicon used in my site">](http://walkman100.github.io/Walkman/Images/Tempecs_Wallpaper_1440x900 square.jpg)
 
-[Walkman's site](http://walkman100.github.com)
+[Walkman's site](http://walkman100.github.io)
 
 The style sheet that is embedded in all pages except the Games folder is [`CSS_JS/main.css`](http://walkman100.github.io/Walkman/CSS_JS/main.css).
 
