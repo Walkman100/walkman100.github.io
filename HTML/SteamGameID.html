@@ -18,11 +18,11 @@
             </noscript>
             <INPUT id="btns" Type="button" VALUE="Back" onClick="history.go(-1);return true;">
             <INPUT Type="button" VALUE="Close" onClick="javascript:window.open('','_self').close();">
-            <form action="steam://run/">
-                <label>Game ID:<input type="text" name="id" id="id" size="10" value="202090"></label>
-                <label><input type="submit" value="Run" onClick="window.location= 'steam://run/' + id.value"></label>
-                <label><input type="submit" value="RunGameID" onClick="window.location= 'steam://rungameid/' + id.value"></label>
-                <label><input type="submit" value="Install" onClick="window.location= 'steam://install/' + id.value"></label>
+            <form>
+                <label>Game ID:<input type="text" name="steamGameID" id="steamGameID" size="10" value="202090"></label>
+                <label><input type="submit" value="Run" onClick="window.location= 'steam://run/' + document.getElementById('steamGameID').value"></label>
+                <label><input type="submit" value="RunGameID" onClick="window.location= 'steam://rungameid/' + document.getElementById('steamGameID').value"></label>
+                <label><input type="submit" value="Install" onClick="window.location= 'steam://install/' + document.getElementById('steamGameID').value"></label>
                 <label><input type="reset" value="Reset"></label>
             </form>
             <!-- Code from http://www.changedetection.com/forwebsites.html, optimised by Walkman (indents e.t.c.) -->
