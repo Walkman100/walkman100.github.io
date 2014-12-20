@@ -5,23 +5,6 @@
         <title>Steam Game ID Linker</title>
         <link rel="stylesheet" href="../CSS_JS/main.css" type="text/css">
         <script type="text/javascript" src="../CSS_JS/jwplayer.js"></script>
-        <script type="text/javascript">
-            function getID(){
-                var steamGameIDvar = document.getElementById('steamGameIDtext');
-            }
-            function steamGameIDrun(){
-                getID
-                window.location='steam://run/'+steamGameIDvar.value;
-            }
-            function steamGameIDrunGameID(){
-                getID
-                window.location='steam://rungameid/'+steamGameIDvar.value
-            }
-            function steamGameIDinstall(){
-                getID
-                window.location='steam://install/'+steamGameIDvar.value
-            }
-        </script>
     </head>
     <body>
         <div class="main">
@@ -36,12 +19,15 @@
             <INPUT id="btns" Type="button" VALUE="Back" onClick="history.go(-1);return true;">
             <INPUT Type="button" VALUE="Close" onClick="javascript:window.open('','_self').close();">
             <form>
-                <label>Game ID:<input type="text" name="steamGameIDtext" id="steamGameIDtext" size="10" value="202090"></label>
-                <label><input type="submit" value="Run" onClick="steamGameIDrun" /></label>
-                <label><input type="submit" value="RunGameID" onClick="steamGameIDrunGameID" /></label>
-                <label><input type="submit" value="Install" onClick="steamGameIDinstall" /></label>
+                <label>Game ID:<input type="text" name="id" id="id" size="10" value="202090"></label>
+                <label><input type="submit" value="Run" onClick="window.location='steam://run/'+id.value" /></label>
+                <label><input type="submit" value="RunGameID" onClick="window.location='steam://rungameid/'+id.value" /></label>
+                <label><input type="submit" value="Install" onClick="window.location='steam://install/'+id.value" /></label>
                 <label><input type="reset" value="Reset"></label>
             </form>
+            <br>If the above buttons don't work, press <kbd>Ctrl</kbd> + <kbd>Shift</kbd> + <kbd>J</kbd> then paste:
+            <br><br><code>window.location='steam://run/'+id.value</code>
+            <br><br>and press <kbd>Enter</kbd>
             <!-- Code from http://www.changedetection.com/forwebsites.html, optimised by Walkman (indents e.t.c.) -->
             <table style="width:100px;  font-family: arial, helvetica;"  border=0 cellpadding=0 cellspacing=0 align=right>
                 <tr><td bgcolor="#999999" align=center>
