@@ -174,8 +174,11 @@ Thumbs.db
 ehthumbs.db
 
 # Folder config file
-#Desktop.ini
-# Disabled so image folders render properly
+# Was previously disabled to upload so image folders render properly
+Desktop.ini
+
+# Linux folder config file
+.directory
 
 # Recycle Bin used on file shares
 $RECYCLE.BIN/
