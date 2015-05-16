@@ -1,4 +1,4 @@
-﻿---
+---
 layout: redirect
 url: javascript:window.open('','_self').close();
 ---
