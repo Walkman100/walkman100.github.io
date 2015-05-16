@@ -1,0 +1,123 @@
+body { /* Background of everything, sets main font */
+    background : grey;
+    font-family : Verdana, Geneva, sans-serif;
+    font-size : 14px;
+}
+
+div { /* For any div element */
+    background : snow; /* What colour is best, snow or seashell? */
+    border : 2px solid #a1a1a1;
+    padding : 10px 20px; 
+    border-radius : 25px;
+}
+
+.banner { /* Top of mainpage.htm */
+    width : 95%;
+    height : 100%;
+    margin-right : auto;
+    margin-left : auto;
+    text-align : center;
+}
+
+.main { /* main site content */
+    width : 750px;
+    margin-right : auto;
+    margin-left : auto;
+    /* text-align : justify; */
+}
+
+.flright { /* for a floating/notification on the right */
+    background : #dddddd;
+    width : 350px;
+    float : right;
+    margin-right : 5px;
+    text-align : center;
+}
+
+.framesetLeft { /* for left of a frameset, contains navigation */
+    margin-right : -8px;
+    border-right-width: 0px;
+    padding-top: 0px;
+    border-top-right-radius: 3px;
+    border-bottom-right-radius: 3px;
+}
+
+.framesetRight { /* for any page that goes on the right of a frameset, currently only blank.htm */
+    margin-left : -10px;
+    border-left-width: 2px;
+    border-top-left-radius: 3px;
+    border-bottom-left-radius: 3px;
+}
+
+.noBorder { /* a div with no border */
+    border : 0px;
+    padding : 0px 0px; 
+    border-radius : 0px;
+}
+
+h1 { /* indent headings */
+    margin-left : 30px;
+}
+
+a:link {
+    text-decoration: none;
+}
+a:visited {
+    text-decoration: none;
+}
+a:hover {
+    text-decoration: underline overline;
+}
+a:active {
+    text-decoration: underline overline;
+}
+
+a:link.noLink {
+    color: #000000;
+    text-decoration: none
+}
+a:visited.noLink {
+    color: #000000;
+    text-decoration: none
+}
+a:hover.noLink {
+    color: #000000;
+    text-decoration: underline overline;
+}
+a:active.noLink {
+    color: #000000;
+    text-decoration: none
+}
+
+/* Demo at http://walkman100.github.io/Walkman/HTML/BtnNav/Page1.html */
+code {
+  border-radius: 6px;
+  border: 1px solid #e5e5e5;
+  background: #f8f8f8;
+  padding: 1px 6px;
+  
+  overflow-x: auto;
+  margin: 0 0px;
+  white-space: nowrap;
+}
+
+blockquote {
+  font-style: italic;
+  padding: 0 0 0 20px;
+  border-left: 2px solid #e5e5e5;
+  margin: 0;
+}
+
+kbd {
+background-color: #e7e7e7;
+background-image: -webkit-linear-gradient(#fefefe, #e7e7e7);
+background-image: linear-gradient(#fefefe, #e7e7e7);
+background-repeat: repeat-x;
+display: inline-block;
+padding: 3px 5px;
+font: 13px Consolas, "Liberation Mono", Menlo, Courier, monospace;
+line-height: 10px;
+color: #000;
+border: 1px solid #cfcfcf;
+border-radius: 2px;
+}
