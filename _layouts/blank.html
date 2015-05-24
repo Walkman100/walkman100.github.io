@@ -6,6 +6,11 @@
         <link rel="shortcut icon" href="/favicon.ico">
         <link rel="stylesheet" href="/embed/main.css" type="text/css">
         <script type="text/javascript" src="/embed/jwplayer.js"></script>
+        {% if page.custom_css != null %}
+            <style type="text/css">
+                {{page.custom_css}}
+            </style>
+        {% endif %}
     </head>
 {{content}}
 </html>
