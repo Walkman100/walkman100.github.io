@@ -1,0 +1,4 @@
+permalink: /:title
+exclude: [desktop.ini, HTMLindex.eig, README.md, LICENSE.md]
+kramdown:
+  input: GFM
