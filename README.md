@@ -3,12 +3,12 @@
 
 [![Gitter](https://badges.gitter.im/Join Chat.svg)](https://gitter.im/Walkman100/Walkman?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
 
-The style sheet that is embedded in all pages except the Games folder is [`CSS_JS/main.css`](http://walkman100.github.io/Walkman/CSS_JS/main.css).
+The style sheet that is embedded in all pages except the Games folder is [`embed/main.css`](http://walkman100.github.io/embed/main.css).
 
 Please check out my YouTube Auto Redirector [here](http://walkman100.github.io/Walkman/HTML/YTVL.html) and the Windows version [here](http://github.com/Walkman100/YTVL/releases/latest), screenshots for the Windows version available [here](http://walkman100.github.io/Walkman/HTML/YTVLWindowsScreenshots.html).
 
 The HTML pages in this repo all use 4 spaces instead of tabs, and any element that is nested from another element is indented.
-The `HTML.TEMPLATE` file is the base for any files in the HTML folder.
+This site uses Jekyll, have a look at the [`_layouts`](/Walkman100/walkman100.github.io/tree/master/_layouts) folder, starting with `page.html`
 
 ## Donate
 [Show your support!](http://walkman100.github.io/Walkman/HTML/Donate.html)
