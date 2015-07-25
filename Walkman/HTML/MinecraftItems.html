@@ -1,24 +1,21 @@
 ---
-layout: page
+layout: custom_buttons
 title: MinecraftWiki.net Item Links
 ---
+
+<INPUT id="btns" Type="button" VALUE="Back" onClick="history.go(-1);return true;">
+<INPUT Type="button" VALUE="Close" onClick="javascript:window.open('','_self').close();">
+<INPUT type=button value="View source on GitHub" onClick="javascript:window.open('https://github.com/Walkman100/walkman100.github.io/blob/master{{page.url}}')">
+<INPUT Type="button" VALUE="Full-size Pictures" onClick="parent.location='#pictures'">
 
 <div class="navbox" style="">
     <table style="" class="collapsible" id="collapsibleTable0">
         <tbody>
             <tr>
                 <th class="navbox-top" colspan="2" style="">
-                    <span class="collapseButton">
-                        <noscript>
-                         For full functionality of this site it is necessary to enable JavaScript.
-                         Here are the <a href="http://www.enable-javascript.com/" target="_blank">
-                         instructions how to enable JavaScript in your web browser</a>.
-                        </noscript>
-                        <a name="top">
-                        <INPUT Type="button" VALUE="Close" onClick="javascript:window.close()">
+                    <span class="navbox-title">
+                        <a href="http://www.minecraftwiki.net/wiki/Items" title="Items">Items</a>
                     </span>
-                    [<span class="navbox-title"><a href="http://www.minecraftwiki.net/wiki/Items" title="Items">Items</a></span>]
-                    <INPUT Type="button" VALUE="Full-size Pictures" onClick="parent.location='#pictures'">
                 </th>
             </tr>
             <tr>
@@ -330,7 +327,7 @@ title: MinecraftWiki.net Item Links
                             <span style="white-space:nowrap"><span style="position: relative; height: 16px; width: 16px; overflow: hidden; display: inline-block; vertical-align: text-top;"><span style="position: absolute; height: 256px; width: 256px; top: -32px; left: -224px;"><a href="http://www.minecraftwiki.net/wiki/Fire_Charge" title="Fire Charge"><img alt="ItemCSS.png" src="/images/bigimages/MinecraftItemCSS.png" width="256" height="256"></a></span></span> <a href="http://www.minecraftwiki.net/wiki/Fire_Charge" title="Fire Charge">Fire Charge</a></span>
                         </li>
                         <li>
-                            <span style="white-space:nowrap"><span style="position: relative; height: 16px; width: 16px; overflow: hidden; display: inline-block; vertical-align: text-top;"><span style="position: absolute; height: 256px; width: 256px; top: 0px; left: -224px;"><a href="./images/Items.htm" title="Snowball"><img alt="ItemCSS.png" src="/images/bigimages/MinecraftItemCSS.png" width="256" height="256"></a></span></span> <strong class="selflink">Snowball</strong></span>
+                            <span style="white-space:nowrap"><span style="position: relative; height: 16px; width: 16px; overflow: hidden; display: inline-block; vertical-align: text-top;"><span style="position: absolute; height: 256px; width: 256px; top: 0px; left: -224px;"><a href="http://www.minecraftwiki.net/wiki/Snowball" title="Snowball"><img alt="ItemCSS.png" src="/images/bigimages/MinecraftItemCSS.png" width="256" height="256"></a></span></span> <a href="http://www.minecraftwiki.net/wiki/Snowball" title="Snowball">Snowball</a></span>
                         </li>
                         <li>
                             <span style="white-space:nowrap"><span style="position: relative; height: 16px; width: 16px; overflow: hidden; display: inline-block; vertical-align: text-top;"><span style="position: absolute; height: 256px; width: 256px; top: -64px; left: -32px;"><a href="http://www.minecraftwiki.net/wiki/Sword" title="Sword"><img alt="ItemCSS.png" src="/images/bigimages/MinecraftItemCSS.png" width="256" height="256"></a></span></span> <a href="http://www.minecraftwiki.net/wiki/Sword" title="Sword">Sword</a></span>
@@ -469,15 +466,18 @@ title: MinecraftWiki.net Item Links
 </div>
 
 <font face="verdana" size="2">
-    <a name="pictures"><h1>Full-size Pictures</h1></a>
-    <FORM><a name="btnBack" /><INPUT Type="button" VALUE="Back" onClick="history.go(-1);return true;"></form>
-    <a name="txt1" />(Click on one of the pictures to go to the most recent version)
+    <h1><a id="pictures" href="#pictures" class="noLink">Full-size Pictures</a></h1>
+    <INPUT id="btns" Type="button" VALUE="Back" onClick="history.go(-1);return true;">
+    Click on a picture to go to the most recent version
     <br>
-    <br><a name="txt2" />Items: <font size="100"> <font size="2">Blocks:
-    <br><a name="img1" /><A HREF="http://media-mcw.cursecdn.com/f/f5/ItemCSS.png"><IMG SRC="/images/bigimages/MinecraftItemCSS.png"></A>
-                         <A HREF="http://media-mcw.cursecdn.com/d/df/BlockCSS.png"><IMG SRC="/images/bigimages/MinecraftBlockCSS.png"></A>
-    <br><a name="txt3" />Data Values for MC 1.7.2:
-    <br><a name="img2" /><A HREF="http://media-mcw.cursecdn.com/8/8c/DataValuesBeta.png"><IMG SRC="/images/bigimages/MinecraftDataValues.png"></A>
+    Items:
+    &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+    Blocks:
+    <br><A HREF="http://media-mcw.cursecdn.com/f/f5/ItemCSS.png"><IMG SRC="/images/bigimages/MinecraftItemCSS.png"></A>
+        <A HREF="http://media-mcw.cursecdn.com/d/df/BlockCSS.png"><IMG SRC="/images/bigimages/MinecraftBlockCSS.png"></A>
+    <br>Data Values for MC 1.7.2:
+    <br><A HREF="http://media-mcw.cursecdn.com/8/8c/DataValuesBeta.png"><IMG SRC="/images/bigimages/MinecraftDataValues.png"></A>
+</font>
 <!-- 
 NewPP limit report
 Preprocessor node count: 25348/1000000
