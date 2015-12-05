@@ -5,7 +5,7 @@
         <title>{{page.title | strip_html}}</title>
         <link rel="shortcut icon" href="/favicon.ico">
         <link rel="stylesheet" href="/embed/main.css" type="text/css">
-        <script type="text/javascript" src="/embed/jwplayer.js"></script>
+        {% if page.jwplayer %}<script type="text/javascript" src="/embed/jwplayer.js"></script>{% endif %}
         {% if page.custom_css != null %}
             <style type="text/css">
                 {{page.custom_css}}
