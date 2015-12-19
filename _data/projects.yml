@@ -71,12 +71,12 @@ projects:
 
   - name: VBNCW
     language: VB.Net on <a href="https://github.com/Walkman100/VBNCW/tree/master/MonoTests" target="_blank">Mono</a>
-    description: VBNC Wrapper: A wrapper for the Mono VB.Net Compiler, with some tests to make sure you have Mono and Mono-VB installed correctly. <br><br>Written for use on Linux, because <code>xbuild</code> (Mono version of <code>MSBuild</code>) doesn't like <code>VBProj</code>s :(
+    description: "VBNC Wrapper: A wrapper for the Mono VB.Net Compiler, with some tests to make sure you have Mono and Mono-VB installed correctly. <br><br>Written for use on Linux, because <code>xbuild</code> (Mono version of <code>MSBuild</code>) doesn't like <code>VBProj</code>s :("
     status: Released
 
   - name: walkman100.github.io
     language: HTML/CSS
-    description: ░▒▓█│【Walkman's】│█▓▒░ site: Source code &amp; hosting
+    description: "░▒▓█│【Walkman's】│█▓▒░ site: Source code &amp; hosting"
 
   - name: WinCompile
     language: Windows Batch (.bat)
