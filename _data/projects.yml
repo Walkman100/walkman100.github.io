@@ -1,9 +1,89 @@
 projects:
-  - name: YTVL
-    language: languages
-    description: hi
+  - name: BasicBrowser
+    language: VB.Net
+    description: A simple fully functional tabbed browser, with bookmarks/favourites that are remembered between sessions. <br>You can Hold <kbd>Alt</kbd> to move the buttons around on the main interface. To reset, simply restart BasicBrowser
+    status: Released
+
+  - name: CMDLauncher
+    language: VB.Net
+    description: This program simply launches .bat files in cmd.exe, for if you accidentally set .bat files to open in a program, which is a problem seen often enough on Windows that I made a utility to fix it.
+    status: Released
+
+  - name: Dashy
+    language: VB.Net
+    description: GUI Revamped (I.E. without all the extra crap) & No extra forms version of <a href="https://github.com/deavmi/Dashy" targed="_blank">Deavmi/Dashy</a>
+    status: Released
+
+  - name: DirectoryImage
+    language: VB.Net
+    description: A program that generates files that set directory images for Windows and Linux
+    status: Released
+
+  - name: FileBrowser
+    language: VB.Net
+    description: A simple file browser coded in VB.Net
+    status: Still basically an idea, since BasicBrowser's IE wrapper includes an Explorer file browser
+
+  - name: InfoManager
+    language: VB.Net
+    description: A simple program for entering info into programs that don't honour the "remember me'" option as they should
     status: Released
 
   - name: GitUpdater
-    language: vb dot net
-    description: this is a description! <code>and some html testing</code>
+    language: VB.Net
+    description: A simple application that can update all your Git repos at once, or one repeatedly until it works
+    status: Released
+
+  - name: KeyInsert
+    language: VB.Net
+    description: A program to insert a set of keystrokes repeatedly. It can "press" almost any key on the keyboard, and you can do cool things like <code>{DOWN 4}</code> (press the down arrow 4 times), and <code>^{ESC}</code> (Ctrl-Esc, which opens the start menu)
+    status: Released
+
+  - name: KeyStatus
+    language: VB.Net
+    description: A fork of <a href="https://github.com/deavmi/KeyStatus" target="_blank">Deavmi/KeyStatus</a> simplified, and with options for how you want key changes to be displayed
+    status: Released
+
+  - name: NumeralConverter
+    language: VB.Net on <a href="https://github.com/Walkman100/VBNCW/tree/master/MonoTests" target="_blank">Mono</a>
+    description: Convert between <a href="https://en.wikipedia.org/wiki/Arabic_numerals" target="_blank">Arabic Numerals</a> and <a href="https://en.wikipedia.org/wiki/Roman_numerals" target="_blank">Roman Numerals</a>
+    status: Released
+
+  - name: PortActions
+    language: VB.Net
+    description: A program that does stuff depending on whether Serial COM ports are open or not
+    status: Completed, but not released
+
+  - name: ProgramLauncher
+    language: VB.Net
+    description: A program that you start with an argument, that asks you which program you want to use, like Androids "Just Once". You can also register it with the HTTP protocol, so you can use it to open links in a browser
+    status: Completed, but not released
+
+  - name: PropertiesDotNet
+    language: VB.Net
+    description: An enhanced properties window
+    status: Released
+
+  - name: SteamPlaceholder
+    language: VB.Net
+    description: A program that you can point <a href="http://store.steampowered.com/">Steam</a> to, that will start User-specified programs/games. Launch with <code>hideGUI</code> command to start minimised
+    status: Released
+
+  - name: VBNCW
+    language: VB.Net on <a href="https://github.com/Walkman100/VBNCW/tree/master/MonoTests" target="_blank">Mono</a>
+    description: VBNC Wrapper: A wrapper for the Mono VB.Net Compiler, with some tests to make sure you have Mono and Mono-VB installed correctly. <br><br>Written for use on Linux, because <code>xbuild</code> (Mono version of <code>MSBuild</code>) doesn't like <code>VBProj</code>s :(
+    status: Released
+
+  - name: walkman100.github.io
+    language: HTML/CSS
+    description: ░▒▓█│【Walkman's】│█▓▒░ site: Source code &amp; hosting
+
+  - name: WinCompile
+    language: Windows Batch (.bat)
+    description: Compile script for my Windows projects, lots of certificate info in the ReadMe
+    status: Released
+
+  - name: YTVL
+    language: VB.Net
+    description: YouTube Video Linker - MS Windows version of <a href="http://walkman100.github.io/ytvl">YTVAL</a>
+    status: Released
