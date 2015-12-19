@@ -12,8 +12,9 @@ title: Walkman's Projects
                 <a class="github-button" href="https://github.com/Walkman100/{{ project.name }}/fork" data-icon="octicon-repo-forked" data-count-href="/Walkman100/{{ project.name }}/network"
                     data-count-api="/repos/Walkman100/{{ project.name }}#forks_count" data-count-aria-label="# forks on GitHub" aria-label="Fork Walkman100/{{ project.name }} on GitHub">Fork</a>
             </h3>
-            <font size="1px">{{ project.language }}</font>
-            <br>{{ project.description }}{% endfor %}
+            {% if project.language != null %}<font size="1px">{{ project.language }}</font>
+            <br>{% endif %}{{ project.description }}
+            {% if project.status != null %} <br>Project Status: {{project.status}} {% endif %} {% endfor %}
             
             <!-- GitHub Buttons script: https://buttons.github.io/ -->
             <script async defer id="github-bjs" src="https://buttons.github.io/buttons.js"></script>

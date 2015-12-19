@@ -2,6 +2,7 @@ projects:
   - name: YTVL
     language: languages
     description: hi
+    status: Released
 
   - name: GitUpdater
     language: vb dot net
