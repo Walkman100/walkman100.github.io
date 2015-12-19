@@ -3,6 +3,6 @@ projects:
     language: languages
     description: hi
 
-  - name: YTVL ytvl YTVL
+  - name: GitUpdater
     language: vb dot net
     description: this is a description! <code>and some html testing</code>
