@@ -8,7 +8,7 @@ The style sheet that is embedded in all pages except the Games folder is [`embed
 Please check out my YouTube Auto Redirector [here](http://walkman100.github.io/Walkman/HTML/YTVL) and the Windows version [here](http://github.com/Walkman100/YTVL/releases/latest), screenshots for the Windows version available [here](http://walkman100.github.io/Walkman/HTML/YTVLWindowsScreenshots).
 
 The HTML pages in this repo all use 4 spaces instead of tabs, and any element that is nested from another element is indented.
-This site uses Jekyll, have a look at the [`_layouts`](/Walkman100/walkman100.github.io/tree/master/_layouts) folder, starting with `page.html`
+This site uses Jekyll, have a look at the [`_layouts`](_layouts) folder, starting with `page.html`
 
 ## Donate
 [Show your support!](http://walkman100.github.io/Walkman/HTML/Donate)
