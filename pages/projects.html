@@ -14,7 +14,8 @@ title: Walkman's Projects
             </h3>
             {% if project.language != null %}<font size="1px">{{ project.language }}</font>
             <br>{% endif %}{{ project.description }}
-            {% if project.status != null %} <br>Project Status: {{project.status}} {% endif %} {% endfor %}
+            {% if project.status != null %} <br>Project Status: {{ project.status }}{% if project.status == "Released" %},
+                <a href="https://github.com/Walkman100/{{ project.name }}/releases/latest" target="_blank">latest release</a> {% endif %}{% endif %} {% endfor %}
             
             <!-- GitHub Buttons script: https://buttons.github.io/ -->
             <script async defer id="github-bjs" src="https://buttons.github.io/buttons.js"></script>
