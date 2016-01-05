@@ -29,17 +29,17 @@ projects:
     status: Still basically an idea, since BasicBrowser's IE wrapper includes an Explorer file browser
     avkey: 1y7846ddudch1bo9
 
-  - name: InfoManager
-    language: VB.Net
-    description: A simple program for entering info into programs that don't honour the "remember me'" option as they should
-    status: Released
-    avkey: 1r0lau52v3c1ai7y
-
   - name: GitUpdater
     language: VB.Net
     description: A simple application that can update all your Git repos at once, or one repeatedly until it works
     status: Released
     avkey: 72cvetqe8awtp2fn
+
+  - name: InfoManager
+    language: VB.Net
+    description: A simple program for entering info into programs that don't honour the "remember me'" option as they should
+    status: Released
+    avkey: 1r0lau52v3c1ai7y
 
   - name: KeyInsert
     language: VB.Net
