@@ -61,7 +61,7 @@ projects:
   - name: PortActions
     language: VB.Net
     description: A program that does stuff depending on whether Serial COM ports are open or not
-    status: Completed, but not released
+    status: Released
     avkey: qdyakh523r6278a7
 
   - name: ProgramLauncher
