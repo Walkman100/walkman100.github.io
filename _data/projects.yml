@@ -67,7 +67,7 @@ projects:
   - name: ProgramLauncher
     language: VB.Net
     description: A program that you start with an argument, that asks you which program you want to use, like Androids "Just Once". You can also register it with the HTTP protocol, so you can use it to open links in a browser
-    status: Completed, but not released
+    status: Released
     avkey: 10h8bivcr90bniyv
 
   - name: PropertiesDotNet
