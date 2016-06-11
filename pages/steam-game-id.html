@@ -3,13 +3,11 @@ layout: page
 title: Steam Game ID Linker
 ---
 
-            <form>
-                <label>Game ID:<input type="text" name="id" id="id" size="10" value="202090"></label>
-                <label><input type="submit" value="Run" onClick="window.location='steam://run/'+id.value" /></label>
-                <label><input type="submit" value="RunGameID" onClick="window.location='steam://rungameid/'+id.value" /></label>
-                <label><input type="submit" value="Install" onClick="window.location='steam://install/'+id.value" /></label>
-                <label><input type="reset" value="Reset"></label>
-            </form>
+            <label>Game ID:<input type="text" name="id" id="id" size="10" value="202090"></label>
+            <input type="submit" value="Run" onClick="window.location='steam://run/'+id.value" />
+            <input type="submit" value="RunGameID" onClick="window.location='steam://rungameid/'+id.value" />
+            <input type="submit" value="Install" onClick="window.location='steam://install/'+id.value" />
+            <input type="reset" value="Reset"></label>
             <br>If the above buttons don't work, press <kbd>Ctrl</kbd> + <kbd>Shift</kbd> + <kbd>J</kbd> then paste:
             <br>(<kbd>Ctrl</kbd> + <kbd>Alt</kbd> + <kbd>C</kbd> on Safari)
             <br><br><code>window.location='steam://run/'+id.value</code>
