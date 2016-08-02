@@ -13,7 +13,7 @@ projects:
 
   - name: Dashy
     language: VB.Net
-    description: GUI Revamped (I.E. without all the extra crap) & No extra forms version of <a href="https://github.com/deavmi/Dashy" target="_blank">Deavmi/Dashy</a>
+    description: GUI Revamped (I.E. without all the extra crap) & No extra forms version of <a href="https://github.com/Walkman-Mirror/Dashy" target="_blank">Deavmi/Dashy</a>
     status: Released
     avkey: 25f3rabups5vvw79
 
@@ -78,7 +78,7 @@ projects:
 
   - name: SteamPlaceholder
     language: VB.Net
-    description: A program that you can point <a href="http://store.steampowered.com/" target="_blank">Steam</a> to, that will start User-specified programs/games. Launch with <code>hideGUI</code> command to start minimised
+    description: A program that you can point the <a href="http://store.steampowered.com/" target="_blank">Steam</a> client to, that will start User-specified programs/games. Launch with <code>hideGUI</code> command to start minimised
     status: Released
     avkey: y315rvdlio5tp8yi
 
