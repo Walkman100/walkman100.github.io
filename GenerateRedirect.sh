@@ -1,9 +1,8 @@
-#@echo off
-#title Redirect Generator
-#color F0
-#cd /d %~dp0
-#SET /P redir=Redirect name:
-#set /P dest=Redirect destination:
+#!/usr/bin/env bash
+cd `dirname $0`
+
+read -r -p "Redirect name: " REDIR;
+read -r -p "Redirect destination: " DEST;
 
 echo ---> $REDIR.html
 echo layout: redirect>> $REDIR.html
