@@ -1,13 +1,19 @@
 projects:
   - name: BasicBrowser
     language: VB.Net
-    description: A simple fully functional tabbed browser, with bookmarks/favourites that are remembered between sessions. You can Hold <kbd>Alt</kbd> to move the buttons around on the main interface. To reset, simply restart BasicBrowser.
+    description: A simple fully functional tabbed browser, with bookmarks/favourites that are remembered between sessions. You can Hold <kbd>Alt</kbd> to move the buttons around on the main interface. To reset, simply restart BasicBrowser
     status: Released
     avkey: vk3okvf6qmlpykgx
 
+  - name: BatchDownloader
+    language: VB.Net
+    description: A tool to download files in batches, reading URLs from a file
+    status: To be released
+    avkey: 822t5iogsgsk95qy
+
   - name: CMDLauncher
     language: VB.Net
-    description: This program simply launches .bat files in cmd.exe, for if you accidentally set .bat files to open in a program, which is a problem seen often enough on Windows that I made a utility to fix it.
+    description: This program simply launches .bat files in cmd.exe, for if you accidentally set .bat files to open in a program, which is a problem seen often enough on Windows that I made a utility to fix it
     status: Released
     avkey: ofjud9o0dd6fknf7
 
