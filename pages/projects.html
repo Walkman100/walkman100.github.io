@@ -3,20 +3,32 @@ layout: page
 title: Walkman's Projects
 ---
 
-            {% for project in site.data.projects.projects %}<h3>
-                <a id="{{ project.name }}" href="#{{ project.name }}" class="noLink">{{ project.name }}</a> &nbsp;
-            </h3>
-            <a class="github-button" href="https://github.com/Walkman100/{{ project.name }}/subscription" data-icon="octicon-eye" data-count-href="/Walkman100/{{ project.name }}/watchers"
-                data-count-api="/repos/Walkman100/{{ project.name }}#subscribers_count" data-count-aria-label="# watchers on GitHub" aria-label="Watch Walkman100/{{ project.name }} on GitHub">Watch</a>
-            <a class="github-button" href="https://github.com/Walkman100/{{ project.name }}" data-icon="octicon-star" data-count-href="/Walkman100/{{ project.name }}/stargazers"
-                data-count-api="/repos/Walkman100/{{ project.name }}#stargazers_count" data-count-aria-label="# stargazers on GitHub" aria-label="Star Walkman100/{{ project.name }} on GitHub">Star</a>
-            <a class="github-button" href="https://github.com/Walkman100/{{ project.name }}/fork" data-icon="octicon-repo-forked" data-count-href="/Walkman100/{{ project.name }}/network/members"
-                data-count-api="/repos/Walkman100/{{ project.name }}#forks_count" data-count-aria-label="# forks on GitHub" aria-label="Fork Walkman100/{{ project.name }} on GitHub">Fork</a>
-            {% if project.language != null %} &nbsp;<font size="2px">{{ project.language }}</font>{% endif %}
-            {% if project.avkey != null %}<br><a href="https://ci.appveyor.com/project/Walkman100/{{ project.name }}" target="_blank"><img src="https://ci.appveyor.com/api/projects/status/{{ project.avkey }}" alt="Build Status"></a>{% endif %}
-            <br>{{ project.description }}
-            {% if project.status != null %}<br><br>Project Status: {{ project.status }}{% if project.status == "Released" %},
-                <a href="https://github.com/Walkman100/{{ project.name }}/releases/latest" target="_blank">latest release</a> {% endif %}{% endif %} {% endfor %}
-            
-            <!-- GitHub Buttons script: https://buttons.github.io/ -->
-            <script async defer id="github-bjs" src="https://buttons.github.io/buttons.js"></script>
+{% for project in site.data.projects.projects %}
+    <h3>
+        <a id="{{ project.name }}" href="#{{ project.name }}" class="noLink">{{ project.name }}</a> &nbsp;
+    </h3>
+    <a class="github-button" href="https://github.com/Walkman100/{{ project.name }}/subscription" data-icon="octicon-eye" data-count-href="/Walkman100/{{ project.name }}/watchers"
+        data-count-api="/repos/Walkman100/{{ project.name }}#subscribers_count" data-count-aria-label="# watchers on GitHub" aria-label="Watch Walkman100/{{ project.name }} on GitHub">Watch</a>
+    <a class="github-button" href="https://github.com/Walkman100/{{ project.name }}" data-icon="octicon-star" data-count-href="/Walkman100/{{ project.name }}/stargazers"
+        data-count-api="/repos/Walkman100/{{ project.name }}#stargazers_count" data-count-aria-label="# stargazers on GitHub" aria-label="Star Walkman100/{{ project.name }} on GitHub">Star</a>
+    <a class="github-button" href="https://github.com/Walkman100/{{ project.name }}/fork" data-icon="octicon-repo-forked" data-count-href="/Walkman100/{{ project.name }}/network/members"
+        data-count-api="/repos/Walkman100/{{ project.name }}#forks_count" data-count-aria-label="# forks on GitHub" aria-label="Fork Walkman100/{{ project.name }} on GitHub">Fork</a>
+    {% if project.language != null %}
+        &nbsp;<font size="2px">{{ project.language }}</font>
+    {% endif %}
+    {% if project.avkey != null %}
+        <br><a href="https://ci.appveyor.com/project/Walkman100/{{ project.name }}" target="_blank">
+            <img src="https://ci.appveyor.com/api/projects/status/{{ project.avkey }}" alt="Build Status">
+        </a>
+    {% endif %}
+    <br>{{ project.description }}
+    {% if project.status != null %}
+        <br><br>Project Status: {{ project.status }}{% if project.status == "Released" %},
+            <a href="https://github.com/Walkman100/{{ project.name }}/releases/latest" target="_blank">latest release</a>{% endif %}{% if project.avkey != null %},
+            <a href="https://ci.appveyor.com/project/Walkman100/PropertiesDotNet/build/artifacts" target="_blank">latest build from commit</a>
+        {% endif %}
+    {% endif %}
+{% endfor %}
+
+<!-- GitHub Buttons script: https://buttons.github.io/ -->
+<script async defer id="github-bjs" src="https://buttons.github.io/buttons.js"></script>
