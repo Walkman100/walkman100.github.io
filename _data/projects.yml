@@ -97,6 +97,17 @@ projects:
     language: HTML/CSS
     description: "░▒▓█│【Walkman's】│█▓▒░ site: Source code &amp; hosting"
 
+  - name: WalkmanLib
+    language: VB.Net
+    description: Small functions and WinAPI code used in my other projects and WalkmanUtils
+    status: Complete
+
+  - name: WalkmanUtils
+    language: VB.Net
+    description: Lots of small utilities using the functions in WalkmanLib
+    status: In Development
+    avkey: pata3xbqfp0gukgi
+
   - name: WinCompile
     language: Windows Batch (.bat)
     description: Compile script for my Windows projects, lots of certificate info in the ReadMe
