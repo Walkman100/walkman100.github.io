@@ -25,7 +25,7 @@ title: Walkman's Projects
     {% if project.status != null %}
         <br><br>Project Status: {{ project.status }}{% if project.status == "Released" %},
             <a href="https://github.com/Walkman100/{{ project.name }}/releases/latest" target="_blank">latest release</a>{% endif %}{% if project.avkey != null %},
-            <a href="https://ci.appveyor.com/project/Walkman100/PropertiesDotNet/build/artifacts" target="_blank">latest build from commit</a>
+            <a href="https://ci.appveyor.com/project/Walkman100/{{ project.name }}/build/artifacts" target="_blank">latest build from commit</a>
         {% endif %}
     {% endif %}
 {% endfor %}
