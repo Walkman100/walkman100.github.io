@@ -1,0 +1,56 @@
+==================================================================
+https://keybase.io/walkman100
+--------------------------------------------------------------------
+
+I hereby claim:
+
+  * I am an admin of https://walkman100.github.com
+  * I am walkman100 (https://keybase.io/walkman100) on keybase.
+  * I have a public key ASD_BbkDX9umy0MTxpgShN2FyxWWvPA7ujRTtvZQzEObXwo
+
+To do so, I am signing this object:
+
+{
+  "body": {
+    "key": {
+      "eldest_kid": "01206474f6cbeafc485eb71eb14a3db0257f8c6d633865a2f33f2a36fd0f814171810a",
+      "host": "keybase.io",
+      "kid": "0120ff05b9035fdba6cb4313c6981284dd85cb1596bcf03bba3453b6f650cc439b5f0a",
+      "uid": "da5a5aa1a41e8cb4e1df79c38a3f3c19",
+      "username": "walkman100"
+    },
+    "merkle_root": {
+      "ctime": 1527364642,
+      "hash": "da504601722719ea2295629d1140f5b825915dbc16164fff4f83f7fff7b0e861b4c02f919e6cad4697ba34f47c4146a12699f2e0f5c52bfbff1aa6455a1e2d3b",
+      "hash_meta": "7d14c8650c46559b14d8afbe77cd49802b542691449a545320ec25ce24e3e536",
+      "seqno": 2934276
+    },
+    "service": {
+      "entropy": "cl9Ue3DzdTIqs3UDMz1xJWN4",
+      "hostname": "walkman100.github.com",
+      "protocol": "https:"
+    },
+    "type": "web_service_binding",
+    "version": 2
+  },
+  "client": {
+    "name": "keybase.io go client",
+    "version": "1.0.48"
+  },
+  "ctime": 1527364655,
+  "expire_in": 504576000,
+  "prev": "7a97676457f74aac78fce7fcec645587a9d3e2122f4d3dd687ace4083e3c31f5",
+  "seqno": 11,
+  "tag": "signature"
+}
+
+which yields the signature:
+
+hKRib2R5hqhkZXRhY2hlZMOpaGFzaF90eXBlCqNrZXnEIwEg/wW5A1/bpstDE8aYEoTdhcsVlrzwO7o0U7b2UMxDm18Kp3BheWxvYWTESpcCC8QgepdnZFf3Sqx4/Of87GRVh6nT4hIvTT3Wh6zkCD48MfXEILj+0VI67yJbiZZOSMWwOL/TgLgDhSbl5pl4+6Eyq/6iAgHCo3NpZ8RAQA+9m4bzACrs8guS3CYouGntlqFFeGGNGwgm2QSzQD+IoTVYnzsA2OzNhG6ZyVSA4GByD6QlbOEgkXnw94F4AKhzaWdfdHlwZSCkaGFzaIKkdHlwZQildmFsdWXEID15pA4G1cJvlXf7nzl7WVTCxGFD8xSjBrifSxEAtg5Co3RhZ80CAqd2ZXJzaW9uAQ==
+
+And finally, I am proving ownership of this host by posting or
+appending to this document.
+
+View my publicly-auditable identity here: https://keybase.io/walkman100
+
+==================================================================
