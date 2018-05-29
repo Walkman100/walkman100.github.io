@@ -33,7 +33,7 @@ projects:
     language: VB.Net
     description: A simple file browser coded in VB.Net
     status: Still basically an idea, since BasicBrowser's IE wrapper includes an Explorer file browser
-    avkey: 1y7846ddudch1bo9
+    avkey: 6xha4xvviewtbgfy
 
   - name: GitUpdater
     language: VB.Net
