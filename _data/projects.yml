@@ -61,7 +61,7 @@ projects:
 
   - name: KeyInsert
     language: VB.Net
-    description: A program to insert a set of keystrokes repeatedly. It can "press" almost any key on the keyboard, and you can do cool things like <code>{DOWN 4}</code> (press the down arrow 4 times), and <code>^{ESC}</code> (Ctrl-Esc, which opens the start menu)
+    description: A program to insert a set of keystrokes repeatedly. It can "press" almost any key on the keyboard, and you can do cool things like <code>{DOWN 4}</code> (press the down arrow 4 times), and <code>^{ESC}</code> (Ctrl-Esc, which opens the start menu). Can also move and click the mouse
     status: Released
     avkey: r7ymfeb1dm0ow50t
 
