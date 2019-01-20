@@ -11,6 +11,18 @@ projects:
     status: To be released
     avkey: 822t5iogsgsk95qy
 
+  - name: ClipboardManager
+    language: VB.Net
+    description: This project keeps a list of anything that went into the clipboard, allowing you to select an item and copy it.
+    status: Released
+    avkey: g5rgh4tfm5fvk1ky
+    
+  - name: ClipboardSaver
+    language: VB.Net
+    description: Simple VB.Net program that saves any images that are set into the clipboard to a specified file
+    status: Released
+    avkey: g32gra4rxcwlrwqr
+
   - name: CMDLauncher
     language: VB.Net
     description: This program simply launches .bat files in cmd.exe, for if you accidentally set .bat files to open in a program, which is a problem seen often enough on Windows that I made a utility to fix it
@@ -58,6 +70,18 @@ projects:
     description: A fork of <a href="https://github.com/deavmi/KeyStatus" target="_blank">Deavmi/KeyStatus</a> simplified, and with options for how you want key changes to be displayed
     status: Released
     avkey: 9iuxa35vg8bhsscl
+
+  - name: M3UEdit
+    language: VB.Net
+    description: VB.Net program to manage M3U playlists used by VLC Media Player
+    status: Released
+    avkey: 4asclj873qjd73ke
+
+  - name: NetEdit
+    language: VB.Net
+    description: A Windows Network Profile manager/editor
+    status: Released
+    avkey: eym04uo66kq2bxo3
 
   - name: NumeralConverter
     language: VB.Net on <a href="https://github.com/Walkman100/VBNCW/tree/master/MonoTests" target="_blank">Mono</a>
