@@ -13,7 +13,7 @@ projects:
 
   - name: ClipboardManager
     language: VB.Net
-    description: This project keeps a list of anything that went into the clipboard, allowing you to select an item and copy it.
+    description: This project keeps a list of anything that went into the clipboard, allowing you to select an item and copy it
     status: Released
     avkey: g5rgh4tfm5fvk1ky
     
