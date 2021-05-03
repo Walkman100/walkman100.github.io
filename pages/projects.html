@@ -13,13 +13,12 @@ title: Walkman's Projects
         data-show-count="true" data-count-api="/repos/Walkman100/{{ project.name }}#stargazers_count" data-count-aria-label="# stargazers on GitHub" aria-label="Star Walkman100/{{ project.name }} on GitHub">Star</a>
     <a class="github-button" href="https://github.com/Walkman100/{{ project.name }}/fork" data-icon="octicon-repo-forked" data-count-href="/Walkman100/{{ project.name }}/network/members"
         data-show-count="true" data-count-api="/repos/Walkman100/{{ project.name }}#forks_count" data-count-aria-label="# forks on GitHub" aria-label="Fork Walkman100/{{ project.name }} on GitHub">Fork</a>
-    {% if project.language != null %}
-        &nbsp;<font size="2px">{{ project.language }}</font>
-    {% endif %}
     {% if project.avkey != null %}
-        <br><a href="https://ci.appveyor.com/project/Walkman100/{{ project.name }}" target="_blank">
-            <img src="https://ci.appveyor.com/api/projects/status/{{ project.avkey }}?svg=true" alt="Build Status">
-        </a>
+        <a href="https://ci.appveyor.com/project/Walkman100/{{ project.name }}" target="_blank">
+          <img src="https://ci.appveyor.com/api/projects/status/{{ project.avkey }}?svg=true" alt="Build Status"></a>
+    {% endif %}
+    {% if project.language != null %}
+        <font size="2px">{{ project.language }}</font>
     {% endif %}
     <br>{{ project.description }}
     {% if project.status != null %}
