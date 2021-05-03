@@ -1,4 +1,10 @@
 projects:
+  - name: AmongUsNameChanger
+    language: VB.Net
+    description: "Name &amp; 'Birthdate' changer for Among Us"
+    status: Released
+    avkey: db9kvqauqvoq4o46
+
   - name: BasicBrowser
     language: VB.Net
     description: A simple fully functional tabbed browser, with bookmarks/favourites that are remembered between sessions. You can Hold <kbd>Alt</kbd> to move the buttons around on the main interface. To reset, simply restart BasicBrowser
@@ -41,11 +47,17 @@ projects:
     status: Released
     avkey: 3ykcx6ojkf612tou
 
+  - name: FactorioInstanceManager
+    language: VB.Net
+    description: Factorio Instance Manager - Instance refers to a set of mods, saves, settings e.t.c.
+    status: Released
+    avkey: 414yhkkdvly6b0s5
+
   - name: FileBrowser
     language: VB.Net
-    description: A simple file browser coded in VB.Net
-    status: Still basically an idea, since BasicBrowser's IE wrapper includes an Explorer file browser
-    avkey: 6xha4xvviewtbgfy
+    description: .Net File Browser. Aimed at being stable, responsive, functional and customisable.
+    status: Released
+    avkey: bnuugyjsjrt3rjev
 
   - name: GitUpdater
     language: VB.Net
@@ -94,6 +106,12 @@ projects:
     status: Released
     avkey: qdyakh523r6278a7
 
+  - name: Po-Go
+    language: VB.Net
+    description: Game based on the Po Go minigame in the Kung Fu Panda XBox game
+    status: Released
+    avkey: t69ce61gbf4wp7go
+
   - name: ProgramLauncher
     language: VB.Net
     description: A program that you start with an argument, that asks you which program you want to use, like Androids "Just Once". You can also register it with the HTTP protocol, so you can use it to open links in a browser
@@ -129,7 +147,7 @@ projects:
   - name: WalkmanUtils
     language: VB.Net
     description: Lots of small utilities using the functions in WalkmanLib
-    status: In Development
+    status: Released
     avkey: pata3xbqfp0gukgi
 
   - name: WinCompile
